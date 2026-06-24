@@ -3,9 +3,9 @@ git command cheatsheet for my daily use
 
 - `git clone <url>`: clones repo
 - `git fetch --prune`: update remote tracking refs and remove deleted remote branches
-‎- `git switch <branch name>`: switch branch and also create local branch and connect it to origin branch if available
-‎- `git pull`: pull latest changes from origin
-‎- `git push`: push local commits to origin
+- `git switch <branch name>`: switch branch and also create local branch and connect it to origin branch if available
+- `git pull`: pull latest changes from origin
+- `git push`: push local commits to origin
 ‎- `git add .`: add changes to staging
 ‎- `git commit -m "message"`: commit staged changes
 ‎- `git reset --hard`: reset to last local commit
