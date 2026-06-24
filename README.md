@@ -15,15 +15,15 @@
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from origin
 - `git push` — push local commits to origin
+- `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
 - `git switch <branch name>` — switch branch; auto-creates local branch tracking origin if available
-- `git branch -vv` — list local branches and their latest commits
-- `git branch -vva` — list both local and remote branches and their latest commits
+- `git branch -vv` — list local branches and their info
+- `git branch -vva` — list both local and remote branches and their info
 - `git branch -D <branch name>` — force delete a local branch
 - `git push origin --delete <branch name>` — delete a remote branch
 - `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch
-- `git remote prune origin` — prune stale remote tracking refs
 
 ## Staging & Committing
 - `git add .` — stage all changes
