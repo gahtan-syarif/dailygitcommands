@@ -11,22 +11,19 @@
 ## Getting & Syncing
 - `git clone <url>` — clone a repo
 - `git fetch` — update remote tracking refs
-- `git pull` — fetch and merge latest changes from origin
-- `git push` — push local commits to origin
+- `git pull` — fetch and merge latest changes from remote repo
 - `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
-- `git switch <branch name>` — switch branch; auto-creates local branch tracking origin if available
-- `git branch -vv` — list local branches and their info
-- `git branch -vvr` — list remote branches and their info
-- `git branch -vva` — list both local and remote branches and their info
+- `git switch <branch name>` — switch branch; auto-creates local branch tracking remote repo if available
 - `git branch -D <branch name>` — force delete a local branch
 - `git push origin --delete <branch name>` — delete a remote branch
 - `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch from current branch
 
-## Staging & Committing
+## Staging, Committing & Pushing
 - `git add .` — stage all changes
-- `git commit -m "<insert message here>"` — commit staged changes
+- `git commit -m "<insert message here>"` — commit staged changes locally
+- `git push` — push local commits to remote repo
 
 ## Undoing
 - `git restore .` — reset to last staged state
@@ -39,8 +36,10 @@
 
 ## Inspecting
 - `git status` — show current branch and working tree status
+- `git branch -vv` — list local branches and their info
+- `git branch -vvr` — list remote branches and their info
+- `git branch -vva` — list both local and remote branches and their info
 - `git log --oneline` — show commit history
 - `git diff` — compare working directory to staging
 - `git diff --staged` — compare staging to last commit
 - `git diff <older commit hash> <newer commit hash>` — compare two commits
-
