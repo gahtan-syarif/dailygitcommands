@@ -18,6 +18,7 @@
 ## Branching
 - `git switch <branch name>` — switch branch; auto-creates local branch tracking origin if available
 - `git branch -vv` — list local branches and their info
+- `git branch -vvr` — list remote branches and their info
 - `git branch -vva` — list both local and remote branches and their info
 - `git branch -D <branch name>` — force delete a local branch
 - `git push origin --delete <branch name>` — delete a remote branch
@@ -32,7 +33,7 @@
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit hash>` — reset to a specific commit
-- `git revert <commit hash>` — create a new commit that undo's a previous specified commit
+- `git revert <commit hash>` — create a new commit that undoes a previous specified commit
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
