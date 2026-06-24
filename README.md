@@ -34,6 +34,7 @@
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit hash>` — reset to a specific commit
+- `git revert <commit hash>` — create a new commit that undo's a previous specified commit
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
