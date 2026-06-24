@@ -12,6 +12,7 @@
 - `git clone <url>` — clone a repo
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from remote branch
+- `git merge --abort` — abort merge if there's a merge conflict
 - `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
@@ -31,6 +32,7 @@
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit hash>` — reset to a specific commit
 - `git revert <commit hash>` — create a new commit that undoes a previous specified commit
+- `git revert --abort` — aborts revert if there's a conflict
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
