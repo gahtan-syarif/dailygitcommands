@@ -1,22 +1,29 @@
 # Daily Git Commands
 
-## Setup
+## Initial Setup
 - `git config --global user.name "<Author Name>"` — set author name for commit metadata
 - `git config --global user.email "<author@email.com>"` — set author email for commit metadata
+- `git config --global fetch.prune true` — automatically prune stale remote tracking refs when doing a git fetch or git pull
+
+## Credentials
+- `git config --global credential.helper 'cache --timeout=3600'` — cache credentials in RAM for 3600 seconds
+- `git config --global --unset credential.helper` — clear credential helper config (revert the above command)
+- `git credential-cache exit` — force clear cached credentials
 
 ## Getting & Syncing
 - `git clone <url>` — clone a repo
-- `git fetch --prune` — update remote tracking refs and remove deleted remote branches
+- `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from origin
 - `git push` — push local commits to origin
 
 ## Branching
 - `git switch <branch name>` — switch branch; auto-creates local branch tracking origin if available
-- `git branch` — list local branches
-- `git branch -a` — list all branches including remote
+- `git branch -vv` — list local branches and their latest commits
+- `git branch -vva` — list both local and remote branches and their latest commits
 - `git branch -D <branch name>` — force delete a local branch
-- `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch
 - `git push origin --delete <branch name>` — delete a remote branch
+- `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch
+- `git remote prune origin` — prune stale remote tracking refs
 
 ## Staging & Committing
 - `git add .` — stage all changes
@@ -36,7 +43,3 @@
 - `git diff --staged` — compare staging to last commit
 - `git diff <older commit hash> <newer commit hash>` — compare two commits
 
-## Credentials
-- `git config --global credential.helper 'cache --timeout=3600'` — cache credentials in RAM for 3600 seconds
-- `git config --global --unset credential.helper` — clear credential helper config (revert the above command)
-- `git credential-cache exit` — force clear cached credentials
