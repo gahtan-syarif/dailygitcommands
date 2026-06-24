@@ -11,10 +11,12 @@
 - `git push` — push local commits to origin
 
 ## Branching
-- `git switch <branch>` — switch branch; auto-creates local branch tracking origin if available
+- `git switch <branch name>` — switch branch; auto-creates local branch tracking origin if available
 - `git branch` — list local branches
 - `git branch -a` — list all branches including remote
-- `git branch -D <branch>` — force delete a local branch
+- `git branch -D <branch name>` — force delete a local branch
+- `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch
+- `git push origin --delete <branch name>` — delete a remote branch
 
 ## Staging & Committing
 - `git add .` — stage all changes
