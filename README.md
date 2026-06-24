@@ -42,6 +42,7 @@
 - `git branch -vvr` — list remote branches and their info
 - `git branch -vva` — list both local and remote branches and their info
 - `git log --oneline --graph --decorate --all` — show full commit history
+- `git reflog` — find lost commits for disaster recovery (e.g. after an accidental git reset)
 - `git show <commit hash>` — show commit info
 - `git diff` — compare working directory to staging
 - `git diff --staged` — compare staging to last commit
