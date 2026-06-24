@@ -24,6 +24,7 @@
 ## Staging, Committing & Pushing
 - `git add .` — stage all changes
 - `git commit -m "<insert message here>"` — commit staged changes locally
+- `git commit --amend -m "<insert message here>"` — recreate the last commit with modifications
 - `git push` — push local commits to remote branch
 
 ## Undoing
