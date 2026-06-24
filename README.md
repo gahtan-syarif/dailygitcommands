@@ -30,6 +30,7 @@
 - `git commit -m "<insert message here>"` — commit staged changes
 
 ## Undoing
+- `git restore .` — reset to last staged state
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit hash>` — reset to a specific commit
