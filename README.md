@@ -12,7 +12,7 @@
 - `git clone <url>` — clone a repo
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from remote branch
-- `git merge --abort` — abort merge if there's a merge conflict
+- `git merge --abort` — aborts merge if there's a merge conflict
 - `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
