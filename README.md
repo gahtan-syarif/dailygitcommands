@@ -1,12 +1,10 @@
 # Daily Git Commands
 
-## Initial Setup
+## Setup & Configuration
 - `git config --global user.name "<Author Name>"` — set author name for commit metadata
 - `git config --global user.email "<author@email.com>"` — set author email for commit metadata
 - `git config --global fetch.prune true` — automatically prune stale remote tracking refs when doing a git fetch or git pull
-
-## Credentials
-- `git config --global credential.helper 'cache --timeout=3600'` — cache credentials in RAM for 3600 seconds
+- `git config --global credential.helper 'cache --timeout=<insert seconds>'` — cache credentials in RAM for specified number of seconds
 - `git config --global --unset credential.helper` — clear credential helper config (revert the above command)
 - `git credential-cache exit` — force clear cached credentials
 
