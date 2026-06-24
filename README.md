@@ -41,7 +41,7 @@
 - `git branch -vv` — list local branches and their info
 - `git branch -vvr` — list remote branches and their info
 - `git branch -vva` — list both local and remote branches and their info
-- `git log --oneline --graph --decorate` — show commit history
+- `git log --oneline --graph --decorate --all` — show full commit history
 - `git show <commit hash>` — show commit info
 - `git diff` — compare working directory to staging
 - `git diff --staged` — compare staging to last commit
