@@ -4,8 +4,8 @@
 - `git config --global user.name "<Author Name>"` — set author name for commit metadata
 - `git config --global user.email "<author@email.com>"` — set author email for commit metadata
 - `git config --global fetch.prune true` — automatically prune stale remote tracking refs when doing a git fetch or git pull
-- `git config --global credential.helper 'cache --timeout=<insert seconds>'` — cache credentials in RAM for specified number of seconds
-- `git config --global --unset credential.helper` — clear credential helper config (revert the above command)
+- `git config --global credential.helper 'cache --timeout=<insert seconds here>'` — cache credentials in RAM for specified number of seconds
+- `git config --global --unset <configuration name>` — unset a configuration (revert the previous commands)
 - `git credential-cache exit` — force clear cached credentials
 
 ## Getting & Syncing
