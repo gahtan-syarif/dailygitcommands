@@ -11,11 +11,11 @@
 ## Getting & Syncing
 - `git clone <url>` — clone a repo
 - `git fetch` — update remote tracking refs
-- `git pull` — fetch and merge latest changes from remote repo
+- `git pull` — fetch and merge latest changes from remote branch
 - `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
-- `git switch <branch name>` — switch branch; auto-creates local branch tracking remote repo if available
+- `git switch <branch name>` — switch branch; auto-creates local branch tracking remote branch if available
 - `git branch -D <branch name>` — force delete a local branch
 - `git push origin --delete <branch name>` — delete a remote branch
 - `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch from current branch
@@ -23,7 +23,7 @@
 ## Staging, Committing & Pushing
 - `git add .` — stage all changes
 - `git commit -m "<insert message here>"` — commit staged changes locally
-- `git push` — push local commits to remote repo
+- `git push` — push local commits to remote branch
 
 ## Undoing
 - `git restore .` — reset to last staged state
