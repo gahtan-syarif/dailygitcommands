@@ -23,7 +23,7 @@
 - `git branch -vva` — list both local and remote branches and their info
 - `git branch -D <branch name>` — force delete a local branch
 - `git push origin --delete <branch name>` — delete a remote branch
-- `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch
+- `git switch -c <branch name> && git push -u origin HEAD` — create both a local and remote branch from current branch
 
 ## Staging & Committing
 - `git add .` — stage all changes
