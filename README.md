@@ -1,4 +1,5 @@
 # Daily Git Commands
+Cheatsheet for the git commands that i personally use. Feel free to use it as reference.
 
 ## Setup & Configuration
 - `git config --global user.name "<Author Name>"` — set author name for commit metadata
