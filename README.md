@@ -4,7 +4,7 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 ## Setup & Configuration
 - `git config --global user.name "<Author Name>"` — set author name for commit metadata
 - `git config --global user.email "<author@email.com>"` — set author email for commit metadata
-- `git config --global fetch.prune true` — automatically prune stale remote tracking refs when doing a git fetch or git pull
+- `git config --global fetch.prune true` — automatically prune stale remote tracking refs when doing a git fetch or git pull (equivalent to always using git fetch --prune)
 - `git config --global credential.helper 'cache --timeout=<insert seconds here>'` — cache credentials in RAM for specified number of seconds
 - `git config --global --unset <configuration name>` — unset a configuration (revert the above commands)
 - `git credential-cache exit` — force clear cached credentials
@@ -14,7 +14,6 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from remote branch
 - `git merge --abort` — aborts merge if there's a merge conflict
-- `git remote prune origin` — prune stale remote tracking refs (not needed if fetch.prune config is set to true)
 
 ## Branching
 - `git switch <branch name>` — switch branch; auto-creates local branch tracking remote branch if available
