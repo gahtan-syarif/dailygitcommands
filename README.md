@@ -39,8 +39,6 @@
 
 ## Inspecting
 - `git status` — show current branch and working tree status
-- `git branch -vv` — list local branches and their info
-- `git branch -vvr` — list remote branches and their info
 - `git branch -vva` — list both local and remote branches and their info
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental git reset)
