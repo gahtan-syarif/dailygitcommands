@@ -13,13 +13,20 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git clone <repo-url>` — clone a repo
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from remote branch
-- `git merge --abort` — aborts merge if there's a merge conflict
 
 ## Branching
 - `git switch <branch-name>` — switch branch; auto-creates local branch tracking remote branch if available
 - `git branch -D <branch-name>` — force delete a local branch
 - `git push origin --delete <branch-name>` — delete a remote branch
 - `git switch -c <branch-name> && git push -u origin HEAD` — create both a local and remote branch from current branch
+
+## Merging & Rebasing
+- `git merge <branch-name>` — merge another branch into the current branch
+- `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
+- `git merge --abort` — aborts merge if there's a merge conflict
+- `git rebase <branch-name>` — rebases current branch on top of another branch
+- `git rebase --abort` — aborts rebase if there's a rebase conflict
+- `git rebase --continue` — continues rebase after resolving conflict
 
 ## Staging, Committing & Pushing
 - `git add .` — stage all changes
