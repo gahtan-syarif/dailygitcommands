@@ -9,8 +9,10 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 - `git credential-cache exit` — force clear cached credentials
 
-## Getting & Syncing
-- `git clone <repo-url>` — clone a repo
+## Repo Initialization & Syncing
+- `git init` — initialize a new local git repo
+- `git remote add origin <repo-url>` — link local repo to a remote repo
+- `git clone <repo-url>` — clone a remote repo locally
 - `git fetch` — update remote tracking refs
 - `git pull` — fetch and merge latest changes from remote branch
 
