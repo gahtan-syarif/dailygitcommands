@@ -9,12 +9,16 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 - `git credential-cache exit` — force clear cached credentials
 
-## Repo Initialization & Syncing
+## Repo Initialization
 - `git init` — initialize a new local git repo
 - `git remote add origin <repo-url>` — link local repo to a remote repo
 - `git clone <repo-url>` — clone a remote repo locally
+
+## Syncing
 - `git fetch` — update remote tracking refs
-- `git pull` — fetch and merge latest changes from remote branch
+- `git pull` — fetch and merge commits from remote branch into current local branch
+- `git push` — push commits from current local branch to remote branch
+
 
 ## Branching
 - `git switch <branch-name>` — switch branch; auto-creates local branch tracking remote branch if available
@@ -31,10 +35,9 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git rebase --abort` — aborts rebase if there's a rebase conflict
 - `git rebase --continue` — continues rebase after resolving conflict
 
-## Staging, Committing & Pushing
+## Staging & Committing
 - `git add .` — stage all changes
 - `git commit -m "<commit-message>"` — commit staged changes locally
-- `git push` — push local commits to remote branch
 
 ## Undoing
 - `git reset --soft HEAD~1` — uncommit the last commit while keeping the files unchanged
