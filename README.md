@@ -28,7 +28,7 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git push` — push local commits to remote branch
 
 ## Undoing
-- `git reset --soft HEAD~1` — undo the last commit while keeping the files unchanged
+- `git reset --soft HEAD~1` — uncommit the last commit while keeping the files unchanged
 - `git restore .` — reset to last staged state
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
