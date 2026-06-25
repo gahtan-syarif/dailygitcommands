@@ -35,6 +35,7 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git revert <commit-hash>` — create a new commit that undoes a specified commit
 - `git revert -m 1 <commit-hash>` — same as above but specifically for merge commits
 - `git revert --abort` — aborts revert if there's a conflict
+- `git revert --continue` — continues revert after resolving conflict
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
