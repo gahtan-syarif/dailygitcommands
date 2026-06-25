@@ -46,3 +46,4 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git diff` — compare working directory to staging
 - `git diff --staged` — compare staging to last commit
 - `git diff <older commit hash> <newer commit hash>` — compare two commits
+- `git config --list --show-origin` — see list of active configurations
