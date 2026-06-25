@@ -22,10 +22,10 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 
 ## Branching
 - `git switch <branch-name>` — switch branch; auto-creates local branch tracking remote branch if available
-- `git branch -D <branch-name>` — force delete a local branch
-- `git push origin --delete <branch-name>` — delete a remote branch
 - `git switch -c <branch-name>` — create a local branch from the current branch
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
+- `git branch -D <branch-name>` — force delete a local branch
+- `git push origin --delete <branch-name>` — delete a remote branch
 
 ## Merging & Rebasing
 - `git merge <branch-name>` — merge another branch into the current branch
