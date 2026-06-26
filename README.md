@@ -47,9 +47,9 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git restore .` — reset to last staged state
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
-- `git reset --hard <commit-hash>` — reset to a specific commit
-- `git revert <commit-hash>` — create a new commit that undoes a specified commit
-- `git revert -m 1 <commit-hash>` — same as above but specifically for merge commits
+- `git reset --hard <commit-id>` — reset to a specific commit
+- `git revert <commit-id>` — create a new commit that undoes a specified commit
+- `git revert -m 1 <commit-id>` — same as above but specifically for merge commits
 - `git revert --abort` — aborts revert if there's a conflict
 - `git revert --continue` — continues revert after resolving conflict
 - `git clean -fd` — remove untracked files and directories
@@ -61,10 +61,10 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental git reset)
-- `git show <commit-hash>` — show commit info
+- `git show <commit-id>` — show commit info
 - `git diff` — compare working directory to staging
-- `git diff <commit-hash>` — compare working directory to a specific commit
+- `git diff <commit-id>` — compare working directory to a specific commit
 - `git diff --staged` — compare staging to last commit
-- `git diff <base-commit-hash> <target-commit-hash>` — compare two commits
-- `git blame -w -M <commit-hash> -- <file-path>` — show who last modified each line of a file as of a specific commit
+- `git diff <base-commit-id> <target-commit-id>` — compare two commits
+- `git blame -w -M <commit-id> -- <file-path>` — show who last modified each line of a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
