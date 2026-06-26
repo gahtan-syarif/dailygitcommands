@@ -57,6 +57,7 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
 - `git log --oneline --graph --decorate --all` — show full commit history
+- `git log --oneline  -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental git reset)
 - `git show <commit-hash>` — show commit info
 - `git diff` — compare working directory to staging
