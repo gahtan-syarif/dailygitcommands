@@ -16,7 +16,8 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 
 ## Syncing
 - `git fetch` — update remote tracking refs
-- `git pull` — fetch and merge commits from remote branch into current local branch
+- `git pull` — fetch latest commits from remote branch and merge them into current local branch
+- `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
 - `git push` — push commits from current local branch to remote branch
 - `git push --force` — force sync a remote branch to match the current local one
 
