@@ -64,5 +64,5 @@ Cheatsheet for the git commands that i personally use. Feel free to use it as re
 - `git diff HEAD` — compare working directory to last commit
 - `git diff --staged` — compare staging to last commit
 - `git diff <base-commit-hash> <target-commit-hash>` — compare two commits
-- `git blame -w <commit-hash> -- <file-path>` — show who last modified each line of a file as of a specific commit
+- `git blame -w -M <commit-hash> -- <file-path>` — show who last modified each line of a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
