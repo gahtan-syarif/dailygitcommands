@@ -8,7 +8,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 
 ## Repository Initialization
-- `git init` — initialize a new local git repo
+- `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
 - `git clone <repo-url>` — clone a remote repo locally
