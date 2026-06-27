@@ -23,6 +23,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Branching
 - `git switch <branch-name>` — switch branch; auto-creates local branch tracking remote branch if available
+- `git switch --detach <commit>` — switch to a specific commit in a detached HEAD state
 - `git switch -c <branch-name>` — create a local branch from the current branch
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
@@ -60,8 +61,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git bisect start` — start a binary search to find the commit that introduced a bug
 - `git bisect good <commit>` — mark a known good commit
 - `git bisect bad <commit>` — mark a known bad commit
-- `git bisect reset` — exit bisect mode and return to the original branch
 - `git bisect run <command>` — automate the search by running a test script
+- `git bisect reset` — exit bisect mode and return to the original branch
 
 ## Inspecting
 - `git status` — show current branch and working tree status
