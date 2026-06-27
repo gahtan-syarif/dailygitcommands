@@ -26,6 +26,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git switch -c <branch-name>` — create a local branch from the current branch
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
+- `git branch --unset-upstream` — unlink the remote branch from the current local branch
 - `git branch -D <branch-name>` — force delete a local branch
 - `git push origin --delete <branch-name>` — delete a remote branch
 
