@@ -38,7 +38,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Staging & Committing
 - `git add .` — stage all changes
-- `git commit -m "<commit-message>"` — commit staged changes locally
+- `git commit -m "<message>"` — commit staged changes locally
 
 ## Undoing
 - `git reset` — unstages all currently staged changes while keeping the files unchanged
