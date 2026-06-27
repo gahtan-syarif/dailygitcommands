@@ -34,6 +34,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
 - `git merge --abort` — aborts merge if there's a merge conflict
+- `git merge --continue` — continues merge after resolving conflict
 - `git rebase <branch-name>` — rebases current branch on top of another branch
 - `git rebase --abort` — aborts rebase if there's a rebase conflict
 - `git rebase --continue` — continues rebase after resolving conflict
