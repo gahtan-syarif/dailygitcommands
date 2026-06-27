@@ -34,7 +34,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
 - `git rebase <branch-name>` — rebases current branch on top of another branch
-- `git cherry-pick <commit-id>` — copy a specific commit from a diverged branch onto the current branch
+- `git cherry-pick <commit>` — copy a specific commit from a diverged branch onto the current branch
 
 ## Staging & Committing
 - `git add .` — stage all changes
@@ -46,9 +46,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git restore .` — reset to last staged state
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
-- `git reset --hard <commit-id>` — reset to a specific commit
-- `git revert <commit-id>` — create a new commit that undoes a specified commit
-- `git revert -m 1 <commit-id>` — same as above but specifically for merge commits
+- `git reset --hard <commit>` — reset to a specific commit
+- `git revert <commit>` — create a new commit that undoes a specified commit
+- `git revert -m 1 <commit>` — same as above but specifically for merge commits
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
@@ -63,11 +63,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
-- `git show <commit-id>` — show commit info
+- `git show <commit>` — show commit info
 - `git diff` — compare working directory to staging
-- `git diff <commit-id>` — compare working directory to a specific commit
+- `git diff <commit>` — compare working directory to a specific commit
 - `git diff --staged` — compare staging to last commit
-- `git diff <base-commit-id> <target-commit-id>` — compare two commits
-- `git blame -w -M <commit-id> -- <file-path>` — show who last modified each line of a file as of a specific commit
+- `git diff <base-commit> <target-commit>` — compare two commits
+- `git blame -w -M <commit> -- <file-path>` — show who last modified each line of a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
 - `git help <git-command>` — show manual for a specific git command
+
+Note: `<commit>` here can be anything that identifies a specific commit, whether it be a commit hash/ID, a branch name (this points to the last commit of that branch), a tag, a symbolic reference (e.g. `HEAD`), or a revision expression that resolves to a single commit (e.g. `HEAD~3`).
