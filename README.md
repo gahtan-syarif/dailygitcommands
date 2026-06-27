@@ -4,7 +4,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Setup & Configuration
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
-- `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials
+- `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 
 ## Repo Initialization
@@ -66,3 +66,4 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git diff <base-commit-id> <target-commit-id>` — compare two commits
 - `git blame -w -M <commit-id> -- <file-path>` — show who last modified each line of a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
+- `git help <git-command>` — show manual for a specific git command (e.g. git help rebase)
