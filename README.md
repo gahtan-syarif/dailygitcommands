@@ -7,7 +7,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 
-## Repo Initialization
+## Repository Initialization
 - `git init` — initialize a new local git repo
 - `git remote add origin <repo-url>` — link local repo to a remote repo
 - `git clone <repo-url>` — clone a remote repo locally
