@@ -41,7 +41,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git commit -m "<message>"` — commit staged changes locally
 
 ## Undoing
-- `git reset` — unstages all currently staged changes while keeping the files unchanged
 - `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the files unchanged
 - `git restore .` — reset to last staged state
 - `git reset --hard` — reset to last local commit
