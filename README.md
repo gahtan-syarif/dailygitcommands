@@ -33,16 +33,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
-- `git merge --abort` — aborts merge if there's a merge conflict
-- `git merge --continue` — continues merge after resolving conflict
 - `git rebase <branch-name>` — rebases current branch on top of another branch
-- `git rebase --abort` — aborts rebase if there's a rebase conflict
-- `git rebase --continue` — continues rebase after resolving conflict
-- `git rebase --skip` — skips a conflicting commit during a rebase
 - `git cherry-pick <commit-id>` — copy a specific commit from a diverged branch onto the current branch
-- `git cherry-pick --abort` — aborts cherry-pick if there's a conflict
-- `git cherry-pick --continue` — continue after resolving cherry-pick conflicts
-- `git cherry-pick --skip` — skips a conflicting commit during a cherry-pick
 
 ## Staging & Committing
 - `git add .` — stage all changes
@@ -57,10 +49,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git reset --hard <commit-id>` — reset to a specific commit
 - `git revert <commit-id>` — create a new commit that undoes a specified commit
 - `git revert -m 1 <commit-id>` — same as above but specifically for merge commits
-- `git revert --abort` — aborts revert if there's a conflict
-- `git revert --continue` — continues revert after resolving conflict
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
+
+## Conflict Resolution
+- `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
+- `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
+- `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
 
 ## Inspecting
 - `git status` — show current branch and working tree status
