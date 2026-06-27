@@ -4,9 +4,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Setup & Configuration
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
-- `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials in RAM for specified number of seconds
+- `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
-- `git credential-cache exit` — force clear cached credentials
 
 ## Repo Initialization
 - `git init` — initialize a new local git repo
