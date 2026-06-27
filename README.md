@@ -30,6 +30,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
 - `git branch -D <branch-name>` — force delete a local branch
 - `git push origin --delete <branch-name>` — delete a remote branch
+- `git worktree add <path> <branch-name>` — check out another branch in a separate directory (creates a new working tree)
+- `git worktree remove <path>` — remove a working tree
 
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
@@ -67,6 +69,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
+- `git worktree list` — list working trees
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
