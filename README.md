@@ -62,7 +62,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch -vva` — list both local and remote branches and their info
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
-- `git reflog` — find lost commits for disaster recovery (e.g. after an accidental git reset)
+- `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
 - `git show <commit-id>` — show commit info
 - `git diff` — compare working directory to staging
 - `git diff <commit-id>` — compare working directory to a specific commit
@@ -70,4 +70,4 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git diff <base-commit-id> <target-commit-id>` — compare two commits
 - `git blame -w -M <commit-id> -- <file-path>` — show who last modified each line of a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
-- `git help <git-command>` — show manual for a specific git command (e.g. git help rebase)
+- `git help <git-command>` — show manual for a specific git command
