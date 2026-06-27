@@ -27,13 +27,16 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch -D <branch-name>` — force delete a local branch
 - `git push origin --delete <branch-name>` — delete a remote branch
 
-## Merging & Rebasing
+## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
 - `git merge --abort` — aborts merge if there's a merge conflict
 - `git rebase <branch-name>` — rebases current branch on top of another branch
 - `git rebase --abort` — aborts rebase if there's a rebase conflict
 - `git rebase --continue` — continues rebase after resolving conflict
+- `git cherry-pick <commit-id>` — copy a specific commit from a diverged branch onto the current branch
+- `git cherry-pick --abort` — aborts cherry-pick if there's a conflict
+- `git cherry-pick --continue` — continue after resolving cherry-pick conflicts
 
 ## Staging & Committing
 - `git add .` — stage all changes
