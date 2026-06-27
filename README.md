@@ -10,10 +10,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Repository Initialization
 - `git init` — initialize a new local git repo
 - `git remote add origin <repo-url>` — link local repo to a remote repo
+- `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
 - `git clone <repo-url>` — clone a remote repo locally
 
 ## Syncing
-- `git fetch --prune` — update remote tracking refs and remove stale remote-tracking branches
+- `git fetch --prune --all` — update all remote tracking refs and remove stale remote-tracking branches
 - `git pull` — fetch latest commits from remote branch and merge them into current local branch
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
 - `git push` — push commits from current local branch to remote branch
@@ -24,6 +25,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git switch <branch-name>` — switch branch; auto-creates local branch tracking remote branch if available
 - `git switch -c <branch-name>` — create a local branch from the current branch
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
+- `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track a remote branch
 - `git branch -D <branch-name>` — force delete a local branch
 - `git push origin --delete <branch-name>` — delete a remote branch
 
