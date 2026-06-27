@@ -37,9 +37,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git rebase <branch-name>` — rebases current branch on top of another branch
 - `git rebase --abort` — aborts rebase if there's a rebase conflict
 - `git rebase --continue` — continues rebase after resolving conflict
+- `git rebase --skip` — skips a conflicting commit during a rebase
 - `git cherry-pick <commit-id>` — copy a specific commit from a diverged branch onto the current branch
 - `git cherry-pick --abort` — aborts cherry-pick if there's a conflict
 - `git cherry-pick --continue` — continue after resolving cherry-pick conflicts
+- `git cherry-pick --skip` — skips a conflicting commit during a cherry-pick
 
 ## Staging & Committing
 - `git add .` — stage all changes
