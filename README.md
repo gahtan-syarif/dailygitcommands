@@ -56,6 +56,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
 - `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
 
+## Debugging
+- `git bisect start` — start a binary search to find the commit that introduced a bug
+- `git bisect good <commit>` — mark a known good commit
+- `git bisect bad <commit>` — mark a known bad commit
+- `git bisect reset` — exit bisect mode and return to the original branch
+- `git bisect run <command>` — automate the search by running a test script
+
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
