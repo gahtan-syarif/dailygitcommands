@@ -71,7 +71,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
 - `git worktree list` — list working trees
-- `git remote -v` list configured remotes
+- `git remote -v` list configured remotes and their URLs
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
