@@ -42,11 +42,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push <remote> --delete <tag-name>` — delete a remote tag
 
-## Stashing
-- `git stash` — move staged and unstaged changes to a stash (untracked files are excluded)
-- `git stash pop` — restore and remove the most recent stash
-- `git stash pop stash@{<index-number>}` — restore and remove a specific stash
-
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
@@ -56,6 +51,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Staging & Committing
 - `git add .` — stage all changes
 - `git commit -m "<message>"` — commit staged changes locally
+
+## Stashing
+- `git stash` — move staged and unstaged changes to a stash (untracked files are excluded)
+- `git stash pop` — restore and remove the most recent stash
+- `git stash pop stash@{<index-number>}` — restore and remove a specific stash
 
 ## Undoing
 - `git restore .` — discard unstaged changes in the working directory
