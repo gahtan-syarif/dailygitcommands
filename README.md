@@ -40,7 +40,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git tag -d <tag-name>` — delete a local tag
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
-- `git push <remote> --delete <tag-name>` — delete a remote tag
+- `git push origin --delete <tag-name>` — delete a remote tag
 
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
