@@ -38,8 +38,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git tag <tag-name> <commit>` — create a lightweight tag for a specific commit
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create an annotated tag for a specific commit
 - `git tag -d <tag-name>` — delete a local tag
-- `git fetch <remote-name> tag <tag-name>` — fetch a tag from remote
 - `git push origin <tag-name>` — push a local tag to remote
+- `git push origin --tags` — push all local tags to remote
 - `git push <remote> --delete <tag-name>` — delete a remote tag
 
 ## Combining Branches
