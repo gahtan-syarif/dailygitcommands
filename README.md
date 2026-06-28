@@ -59,7 +59,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
 - `git stash pop` — restore and remove the most recent stash
 - `git stash pop stash@{<index-number>}` — restore and remove a specific stash
-- `git stash drop stash@{<index>}` — delete a specific stash
+- `git stash drop stash@{<index-number>}` — delete a specific stash
 - `git stash clear` — delete all stashes
 
 ## Undoing
