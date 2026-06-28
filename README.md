@@ -51,6 +51,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Staging & Committing
 - `git add <file-path>` — stage a specific file
 - `git add .` — stage all changes
+- `git restore --staged <file-path>` — unstage a specific file
+- `git restore --staged .` — unstage all changes
 - `git commit -m "<message>"` — commit staged changes locally
 
 ## Stashing
