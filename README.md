@@ -23,7 +23,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
-- `git switch --detach <commit>` — switch to a specific commit in a detached HEAD state
+- `git switch --detach <commit>` — switch to a specific commit (in a detached HEAD state)
 - `git branch <branch-name>` — create a local branch from the current branch or commit
 - `git branch -D <branch-name>` — force delete a local branch
 - `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
