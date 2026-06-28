@@ -49,11 +49,12 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git cherry-pick <commit>` — copy a specific commit from a diverged branch onto the current branch
 
 ## Staging & Committing
+- `git add <file-path>` — stage a specific file
 - `git add .` — stage all changes
 - `git commit -m "<message>"` — commit staged changes locally
 
 ## Stashing
-- `git stash` — move staged and unstaged changes to a stash (untracked files are excluded)
+- `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
 - `git stash pop` — restore and remove the most recent stash
 - `git stash pop stash@{<index-number>}` — restore and remove a specific stash
 - `git stash drop stash@{<index>}` — delete a specific stash
