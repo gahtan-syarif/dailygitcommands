@@ -87,7 +87,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Repository Mirroring
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
-- `git fetch --prune --all && git push --mirror <target-repo-url>` — update the local mirror and make the target repo match it exactly
+- `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
 
 ## Inspecting
 - `git status` — show current branch and working tree status
