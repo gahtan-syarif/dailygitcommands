@@ -9,8 +9,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Repository Initialization
 - `git init` — initialize a new local git repo in the current directory 
-- `git remote add origin <repo-url>` — link local repo to a remote repo
+- `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
+- `git remote remove <remote-name>` — remove a remote (e.g. when migrating to a different git hosting provider)
 - `git clone <repo-url>` — clone a remote repo locally
 
 ## Syncing
@@ -45,7 +46,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Undoing
 - `git restore .` — discard unstaged changes in the working directory
-- `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the files unchanged
+- `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the working directory unchanged
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit>` — reset to a specific commit
@@ -70,6 +71,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
 - `git worktree list` — list working trees
+- `git remote -v` list configured remotes
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
