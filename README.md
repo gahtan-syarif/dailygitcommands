@@ -34,6 +34,14 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
 - `git worktree remove <path>` — remove a working tree
 
+## Tagging
+- `git tag <tag-name> <commit>` — create a lightweight tag for a specific commit
+- `git tag -a <tag-name> -m "<tag-message>" <commit>` — create an annotated tag for a specific commit
+- `git tag -d <tag-name>` — delete a local tag
+- `git fetch <remote-name> tag <tag-name>` — fetch a tag from remote
+- `git push origin <tag-name>` — push a local tag to remote
+- `git push <remote> --delete <tag-name>` — delete a remote tag
+
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
@@ -74,6 +82,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
+- `git tag -n` — list all local tags
 - `git worktree list` — list working trees
 - `git remote -v` — list configured remotes and their URLs
 - `git log --oneline --graph --decorate --all` — show full commit history
