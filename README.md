@@ -67,6 +67,10 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git bisect run <command>` — automate the search by running a test script
 - `git bisect reset` — exit bisect mode and return to the original branch
 
+## Repository Mirroring
+- `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
+- `git fetch --prune --all && git push --mirror <target-repo-url>` — update the local mirror and make the target repo match it exactly
+
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
