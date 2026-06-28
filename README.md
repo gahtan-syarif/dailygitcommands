@@ -42,6 +42,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push <remote> --delete <tag-name>` — delete a remote tag
 
+## Stashing
+- `git stash` — move staged and unstaged changes to a stash (untracked files are excluded)
+- `git stash pop` — restore and remove the most recent stash
+- `git stash pop stash@{<index-number>}` — restore and remove a specific stash
+
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
@@ -83,6 +88,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
 - `git tag -n` — list all local tags
+- `git stash list` — list all stashes
 - `git worktree list` — list working trees
 - `git remote -v` — list configured remotes and their URLs
 - `git log --oneline --graph --decorate --all` — show full commit history
