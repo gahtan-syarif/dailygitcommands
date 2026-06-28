@@ -28,10 +28,10 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch -D <branch-name>` — force delete a local branch
 - `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
-- `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
-- `git worktree remove <path>` — remove a working tree
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin --delete <branch-name>` — delete a remote branch
+- `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
+- `git worktree remove <path>` — remove a working tree
 
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
