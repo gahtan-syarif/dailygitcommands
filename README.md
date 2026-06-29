@@ -105,6 +105,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git diff <commit>` — compare working directory to a specific commit
 - `git diff --staged` — compare staging to last commit
 - `git diff <base-commit> <target-commit>` — compare two commits
+- `git diff <base-commit>...<target-commit>` — compare the target commit to the merge base (common ancestor) of the two commits
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
 - `git config --list --show-origin` — see list of active configurations
 - `git help <git-command>` — show manual for a specific git command
