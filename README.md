@@ -69,7 +69,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git reset --hard @{u}` — reset to last remote commit
 - `git reset --hard <commit>` — reset to a specific commit
 - `git revert <commit>` — create a new commit that undoes a specified commit
-- `git revert -m 1 <commit>` — same as above but specifically for merge commits
+- `git revert -m 1 <commit>` — same as above but specifically for merge commits (reverts a merge)
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
