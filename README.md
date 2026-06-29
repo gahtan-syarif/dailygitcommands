@@ -100,7 +100,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
 - `git show <commit>` — show commit info
-- `git merge-base <commit1> <commit2>` — find the common ancestor commit of two commits or branches
 - `git diff` — compare working directory to staging
 - `git diff <commit>` — compare working directory to a specific commit
 - `git diff --staged` — compare staging to last commit
