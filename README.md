@@ -6,6 +6,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
+- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 
 ## Repository Initialization
 - `git init` — initialize a new local git repo in the current directory 
@@ -94,7 +95,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
 
 ## LFS
-- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 - `git lfs track "<pattern>"` — track matching files with Git LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with Git LFS
 
