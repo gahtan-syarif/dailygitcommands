@@ -93,6 +93,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repository as a subtree (e.g. a third party library)
 - `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
 
+## LFS
+- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
+- `git lfs track "<pattern>"` — track matching files with Git LFS
+- `git lfs untrack "<pattern>"` — stop tracking matching files with Git LFS
+
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
