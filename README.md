@@ -89,6 +89,10 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
 - `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
 
+## Subtree
+- git subtree add --squash --prefix=<path> <repo-url> <commit> — add a repository as a subtree (e.g. a third party library)
+- git subtree pull --squash --prefix=<path> <repo-url> <ref> — sync the subtree to a specific commit from its upstream repository
+
 ## Inspecting
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
