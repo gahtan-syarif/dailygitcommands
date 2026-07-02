@@ -95,8 +95,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
 
 ## LFS
-- `git lfs track "<pattern>"` — track matching files with Git LFS
-- `git lfs untrack "<pattern>"` — stop tracking matching files with Git LFS
+- `git lfs track "<pattern>"` — track matching files with LFS
+- `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
+- `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 
 ## Inspecting
 - `git status` — show current branch and working tree status
@@ -105,6 +106,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git stash list` — list all stashes
 - `git worktree list` — list working trees
 - `git remote -v` — list configured remotes and their URLs
+- `git lfs ls-files` — list LFS-tracked files
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
