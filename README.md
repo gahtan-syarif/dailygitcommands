@@ -5,6 +5,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
+- `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern git hosting providers
+- `git config --global diff.algorithm histogram` — use the better `histogram` diff algorithm instead of the default `myers` algorithm
+- `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 - `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 
