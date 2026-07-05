@@ -102,7 +102,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 
-## Inspecting
+## Information
 - `git status` — show current branch and working tree status
 - `git branch -vva` — list both local and remote branches and their info
 - `git tag -n` — list all local tags
