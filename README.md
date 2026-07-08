@@ -1,6 +1,25 @@
 # Daily Git Commands
 Cheatsheet for the git commands and configuration that i personally use. Feel free to use it as reference.
 
+## Table of Contents
+
+- [Setup & Configuration](#setup--configuration)
+- [Repository Initialization](#repository-initialization)
+- [Syncing](#syncing)
+- [Branching](#branching)
+- [Tagging](#tagging)
+- [Combining Branches](#combining-branches)
+- [Staging & Committing](#staging--committing)
+- [Stashing](#stashing)
+- [Undoing](#undoing)
+- [Conflict Resolution](#conflict-resolution)
+- [Debugging](#debugging)
+- [Repository Mirroring](#repository-mirroring)
+- [Subtree](#subtree)
+- [LFS](#lfs)
+- [Information](#information)
+
+
 ## Setup & Configuration
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
