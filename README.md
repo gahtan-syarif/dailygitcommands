@@ -130,7 +130,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git stash list` — list all stashes
 - `git worktree list` — list working trees
 - `git remote -v` — list configured remotes and their URLs
-- `git submodule status` — show the current commit and status of each submodule
+- `git submodule status --recursive` — show the current commit and status of each submodule
 - `git lfs ls-files` — list LFS-tracked files
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
