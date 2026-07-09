@@ -15,7 +15,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Conflict Resolution](#conflict-resolution)
 - [Debugging](#debugging)
 - [Repository Mirroring](#repository-mirroring)
-- [Subtree](#subtree)
+- [Subtrees & Submodules](#subtrees--submodules)
 - [LFS](#lfs)
 - [Information](#information)
 
@@ -111,9 +111,12 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
 - `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
 
-## Subtree
+## Subtrees & Submodules
 - `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repository as a subtree (e.g. a third party library)
 - `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
+- `git submodule add <repo-url> <path>` — add a repository as a submodule
+- `git submodule sync --recursive` — refresh local submodule remote URLs
+- `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
 
 ## LFS
 - `git lfs track "<pattern>"` — track matching files with LFS
@@ -127,6 +130,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git stash list` — list all stashes
 - `git worktree list` — list working trees
 - `git remote -v` — list configured remotes and their URLs
+- `git submodule status` — show the current commit and status of each submodule
 - `git lfs ls-files` — list LFS-tracked files
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
