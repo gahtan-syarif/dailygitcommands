@@ -6,18 +6,21 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Setup & Configuration](#setup--configuration)
 - [Repository Initialization](#repository-initialization)
 - [Syncing](#syncing)
+- [Status](#status)
 - [Branching](#branching)
 - [Tagging](#tagging)
 - [Combining Branches](#combining-branches)
 - [Staging & Committing](#staging--committing)
 - [Stashing](#stashing)
 - [Undoing](#undoing)
+- [History](#history)
+- [Diffing](#diffing)
 - [Conflict Resolution](#conflict-resolution)
 - [Debugging](#debugging)
 - [Repository Mirroring](#repository-mirroring)
 - [Subtrees & Submodules](#subtrees--submodules)
 - [LFS](#lfs)
-- [Information](#information)
+- [Documentation](#documentation)
 
 
 ## Setup & Configuration
@@ -27,14 +30,16 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern git hosting providers
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
+- `git config --list --show-origin` — see list of active configurations
 - `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 
 ## Repository Initialization
+- `git clone <repo-url>` — clone a remote repo locally
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
 - `git remote remove <remote-name>` — remove a remote (e.g. when migrating to a different git hosting provider)
-- `git clone <repo-url>` — clone a remote repo locally
+- `git remote -v` — list configured remotes and their URLs
 
 ## Syncing
 - `git fetch --prune --all` — update all remote tracking refs and remove stale remote-tracking branches
@@ -43,6 +48,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git push` — push commits from current local branch to remote branch
 - `git push --force` — force sync a remote branch to match the current local one
 
+## Status
+- `git status` — show current branch and working tree status
 
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
@@ -51,10 +58,12 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch -D <branch-name>` — force delete a local branch
 - `git branch --set-upstream-to=<remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
+- `git branch -vva` — list both local and remote branches and their info
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin --delete <branch-name>` — delete a remote branch
 - `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
 - `git worktree remove <path>` — remove a working tree
+- `git worktree list` — list working trees
 
 ## Tagging
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local tag for a specific commit
@@ -62,6 +71,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <tag-name>` — delete a remote tag
+- `git tag -n` — list all local tags
 
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
@@ -82,6 +92,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git stash pop stash@{<index-number>}` — restore and remove a specific stash
 - `git stash drop stash@{<index-number>}` — delete a specific stash
 - `git stash clear` — delete all stashes
+- `git stash list` — list all stashes
 
 ## Undoing
 - `git restore <file-path>` — discard unstaged changes for a specific file
@@ -94,6 +105,20 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git revert -m 1 <commit>` — same as above but specifically for merge commits (reverts a merge)
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
+
+## History
+- `git log --oneline --graph --decorate --all` — show full commit history
+- `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
+- `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
+- `git show <commit>` — show commit info
+- `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
+
+## Diffing
+- `git diff` — compare working directory to staging
+- `git diff <commit>` — compare working directory to a specific commit
+- `git diff --staged` — compare staging to last commit
+- `git diff <base-commit> <target-commit>` — compare two commits
+- `git diff <base-commit>...<target-commit>` — compare the target commit to the merge base (common ancestor) of the two commits
 
 ## Conflict Resolution
 - `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
@@ -117,32 +142,16 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git submodule add <repo-url> <path>` — add a repository as a submodule
 - `git submodule sync --recursive` — refresh local submodule remote URLs
 - `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
+- `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
 - `git lfs track "<pattern>"` — track matching files with LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
-
-## Information
-- `git status` — show current branch and working tree status
-- `git branch -vva` — list both local and remote branches and their info
-- `git tag -n` — list all local tags
-- `git stash list` — list all stashes
-- `git worktree list` — list working trees
-- `git remote -v` — list configured remotes and their URLs
-- `git submodule status --recursive` — show the current commit and status of each submodule
 - `git lfs ls-files` — list LFS-tracked files
-- `git log --oneline --graph --decorate --all` — show full commit history
-- `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
-- `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
-- `git show <commit>` — show commit info
-- `git diff` — compare working directory to staging
-- `git diff <commit>` — compare working directory to a specific commit
-- `git diff --staged` — compare staging to last commit
-- `git diff <base-commit> <target-commit>` — compare two commits
-- `git diff <base-commit>...<target-commit>` — compare the target commit to the merge base (common ancestor) of the two commits
-- `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
-- `git config --list --show-origin` — see list of active configurations
+
+## Documentation
 - `git help <git-command>` — show manual for a specific git command
+- `git help -a` — list all available git commands and their description
 
 Note: `<commit>` here can be anything that identifies a specific commit, whether it be a commit hash/ID, a branch name (this points to the last commit of that branch), a tag, a symbolic reference (e.g. `HEAD`), or a revision expression that resolves to a single commit (e.g. `HEAD~3`).
