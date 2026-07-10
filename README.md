@@ -68,10 +68,10 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Tagging
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local tag for a specific commit
 - `git tag -d <tag-name>` — delete a local tag
+- `git tag -n` — list all local tags
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <tag-name>` — delete a remote tag
-- `git tag -n` — list all local tags
 
 ## Combining Branches
 - `git merge <branch-name>` — merge another branch into the current branch
