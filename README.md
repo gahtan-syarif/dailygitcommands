@@ -112,6 +112,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
 - `git show <commit>` — show commit info
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
+- `git describe --contains <commit>` — show the earliest tag that contains a commit (e.g. to find which release a commit is part of)
 
 ## Diffing
 - `git diff` — compare working directory to staging
