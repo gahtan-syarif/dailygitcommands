@@ -4,7 +4,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Table of Contents
 
 - [Setup & Configuration](#setup--configuration)
-- [Repository Initialization](#repository-initialization)
+- [Initialization](#initialization)
 - [Syncing](#syncing)
 - [Status](#status)
 - [Branching](#branching)
@@ -17,7 +17,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Diffing](#diffing)
 - [Conflict Resolution](#conflict-resolution)
 - [Debugging](#debugging)
-- [Repository Mirroring](#repository-mirroring)
+- [Mirroring](#mirroring)
 - [Subtrees & Submodules](#subtrees--submodules)
 - [LFS](#lfs)
 - [Documentation](#documentation)
@@ -33,7 +33,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --list --show-origin` — see list of active configurations
 - `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 
-## Repository Initialization
+## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
@@ -134,7 +134,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git bisect run <command>` — automate the search by running a test script
 - `git bisect reset` — exit bisect mode and return to the original branch
 
-## Repository Mirroring
+## Mirroring
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
 - `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
 
