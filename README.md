@@ -14,7 +14,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Stashing](#stashing)
 - [Undoing](#undoing)
 - [History](#history)
-- [Diffing](#diffing)
+- [Comparing](#comparing)
 - [Conflict Resolution](#conflict-resolution)
 - [Debugging](#debugging)
 - [Mirroring](#mirroring)
@@ -109,13 +109,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## History
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline --graph --decorate <commit>` — show commit history up to a specified commit
-- `git log --oneline  --follow -- <file-path>` — show commit history for a file in the current branch
+- `git log --oneline  --decorate --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
 - `git show <commit>` — show commit info
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
 - `git describe --contains <commit>` — show the earliest tag that contains a commit (e.g. to find which release a commit is part of)
 
-## Diffing
+## Comparing
 - `git diff` — compare working directory to staging
 - `git diff <commit>` — compare working directory to a specific commit
 - `git diff --staged` — compare staging to last commit
