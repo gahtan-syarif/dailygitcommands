@@ -1,7 +1,8 @@
 # Daily Git Commands
 Cheatsheet for the git commands and configuration that i personally use. Feel free to use it as reference.
 
-*Note: Throughout this cheatsheet, `<commit>` can be any reference that identifies a specific commit, such as a commit hash, a branch name (this points to the last commit of that branch), a tag, symbolic reference (e.g. `HEAD`), or revision expression (e.g. `HEAD~3`).*
+> [!NOTE]
+> Throughout this cheatsheet, `<commit>` can be any reference that identifies a specific commit, such as a commit hash, a branch name (this points to the last commit of that branch), a tag, symbolic reference (e.g. `HEAD`), or revision expression (e.g. `HEAD~3`).
 
 ## Table of Contents
 
@@ -117,7 +118,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
 - `git describe --contains <commit>` — show the earliest tag that contains a commit (e.g. to find which release a commit is part of)
 
-*Note: `git log` also supports filters such as `--author="<name>"`, `--since="<date>"`, `--until="<date>"`, and `--grep="<pattern>"`, which can be combined as needed.*
+> [!NOTE]
+> `git log` also supports filters such as `--author="<name>"`, `--since="<date>"`, `--until="<date>"`, and `--grep="<pattern>"`, which can be combined as needed.
 
 ## Comparing
 - `git diff` — compare working directory to staging
