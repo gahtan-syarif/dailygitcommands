@@ -117,7 +117,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
 - `git describe --contains <commit>` — show the earliest tag that contains a commit (e.g. to find which release a commit is part of)
 
-*Note: `git log` supports filters such as `--author="<name>"`, `--since="<date>"`, `--until="<date>"`, and `--grep="<pattern>"`, which can be combined as needed.*
+*Note: `git log` also supports filters such as `--author="<name>"`, `--since="<date>"`, `--until="<date>"`, and `--grep="<pattern>"`, which can be combined as needed.*
 
 ## Comparing
 - `git diff` — compare working directory to staging
