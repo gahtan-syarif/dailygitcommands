@@ -10,15 +10,15 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Initialization](#initialization)
 - [Syncing](#syncing)
 - [Status](#status)
+- [Staging & Committing](#staging--committing)
 - [Branching](#branching)
 - [Tagging](#tagging)
 - [Combining Branches](#combining-branches)
-- [Staging & Committing](#staging--committing)
-- [Stashing](#stashing)
 - [Undoing](#undoing)
+- [Conflict Resolution](#conflict-resolution)
 - [History](#history)
 - [Comparing](#comparing)
-- [Conflict Resolution](#conflict-resolution)
+- [Stashing](#stashing)
 - [Debugging](#debugging)
 - [Mirroring](#mirroring)
 - [Subtrees & Submodules](#subtrees--submodules)
@@ -54,6 +54,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Status
 - `git status` — show current branch and working tree status
 
+## Staging & Committing
+- `git add <file-path>` — stage a specific file
+- `git add .` — stage all changes
+- `git restore --staged <file-path>` — unstage a specific file
+- `git restore --staged .` — unstage all changes
+- `git commit -m "<message>"` — commit staged changes locally
+
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
 - `git switch --detach <commit>` — switch to a specific commit (in a detached HEAD state)
@@ -82,21 +89,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git rebase <branch-name>` — rebases current branch on top of another branch
 - `git cherry-pick <commit>` — copy a specific commit from a diverged branch onto the current branch
 
-## Staging & Committing
-- `git add <file-path>` — stage a specific file
-- `git add .` — stage all changes
-- `git restore --staged <file-path>` — unstage a specific file
-- `git restore --staged .` — unstage all changes
-- `git commit -m "<message>"` — commit staged changes locally
-
-## Stashing
-- `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
-- `git stash pop` — restore and remove the most recent stash
-- `git stash pop stash@{<index-number>}` — restore and remove a specific stash
-- `git stash drop stash@{<index-number>}` — delete a specific stash
-- `git stash clear` — delete all stashes
-- `git stash list` — list all stashes
-
 ## Undoing
 - `git restore <file-path>` — discard unstaged changes for a specific file
 - `git restore .` — discard unstaged changes in the working directory
@@ -108,6 +100,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git revert -m 1 <commit>` — same as above but specifically for merge commits (reverts a merge)
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
+
+## Conflict Resolution
+- `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
+- `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
+- `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
 
 ## History
 - `git log --oneline --graph --decorate --all` — show full commit history
@@ -128,10 +125,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git diff <base-commit> <target-commit>` — compare two commits
 - `git diff <base-commit>...<target-commit>` — compare the target commit to the merge base (common ancestor) of the two commits
 
-## Conflict Resolution
-- `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
-- `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
-- `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
+## Stashing
+- `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
+- `git stash pop` — restore and remove the most recent stash
+- `git stash pop stash@{<index-number>}` — restore and remove a specific stash
+- `git stash drop stash@{<index-number>}` — delete a specific stash
+- `git stash clear` — delete all stashes
+- `git stash list` — list all stashes
 
 ## Debugging
 - `git bisect start` — start a binary search to find the commit that introduced a bug
