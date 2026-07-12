@@ -21,6 +21,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Stashing](#stashing)
 - [Debugging](#debugging)
 - [Mirroring](#mirroring)
+- [Worktrees](#worktrees)
 - [Subtrees & Submodules](#subtrees--submodules)
 - [LFS](#lfs)
 - [Documentation](#documentation)
@@ -71,9 +72,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git branch -vva` — list both local and remote branches and their info
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin --delete <branch-name>` — delete a remote branch
-- `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
-- `git worktree remove <path>` — remove a working tree
-- `git worktree list` — list working trees
 
 ## Tagging
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local tag for a specific commit
@@ -143,6 +141,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Mirroring
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
 - `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
+
+## Worktrees
+- `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
+- `git worktree remove <path>` — remove a working tree
+- `git worktree list` — list working trees
 
 ## Subtrees & Submodules
 - `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repository as a subtree (e.g. a third party library)
