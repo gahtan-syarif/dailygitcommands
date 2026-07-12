@@ -14,9 +14,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Committing](#committing)
 - [Branching](#branching)
 - [Tagging](#tagging)
-- [Combining Branches](#combining-branches)
+- [Integration](#integration)
 - [Undoing](#undoing)
-- [Conflict Resolution](#conflict-resolution)
+- [Conflicts](#conflicts)
 - [History](#history)
 - [Comparing](#comparing)
 - [Stashing](#stashing)
@@ -87,7 +87,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <tag-name>` — delete a remote tag
 
-## Combining Branches
+## Integration
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
 - `git rebase <branch-name>` — rebases current branch on top of another branch
@@ -105,7 +105,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git clean -fd` — remove untracked files and directories
 - `git clean -fdx` — same as above but also removes gitignored files (be careful)
 
-## Conflict Resolution
+## Conflicts
 - `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
 - `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
 - `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
