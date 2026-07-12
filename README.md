@@ -64,8 +64,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Committing
 - `git commit -m "<message>"` — commit staged changes locally
-- git commit --amend -m "<message>" — replace the latest commit with a new commit
-- git commit --amend --no-edit — replace the latest commit with a new commit while keeping the existing commit message
+- `git commit --amend -m "<message>"` — replace the latest commit with a new commit
+- `git commit --amend --no-edit` — replace the latest commit with a new commit while keeping the existing commit message
 
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
