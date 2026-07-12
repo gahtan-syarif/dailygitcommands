@@ -22,7 +22,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Debugging](#debugging)
 - [Mirroring](#mirroring)
 - [Worktrees](#worktrees)
-- [Subtrees & Submodules](#subtrees--submodules)
+- [Subtrees](#subtrees)
+- [Submodules](#submodules)
 - [LFS](#lfs)
 - [Documentation](#documentation)
 
@@ -147,9 +148,11 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git worktree remove <path>` — remove a working tree
 - `git worktree list` — list working trees
 
-## Subtrees & Submodules
+## Subtrees
 - `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repository as a subtree (e.g. a third party library)
 - `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
+
+## Submodules
 - `git submodule add <repo-url> <path>` — add a repository as a submodule
 - `git submodule sync --recursive` — refresh local submodule remote URLs
 - `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
