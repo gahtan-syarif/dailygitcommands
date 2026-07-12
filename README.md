@@ -158,7 +158,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
-- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
+- `git lfs install` — initialize Git LFS on the current machine (only done once per machine)
 - `git lfs track "<pattern>"` — track matching files with LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
