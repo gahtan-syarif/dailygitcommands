@@ -10,7 +10,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Initialization](#initialization)
 - [Syncing](#syncing)
 - [Status](#status)
-- [Staging & Committing](#staging--committing)
+- [Staging](#staging)
+- [Committing](#committing)
 - [Branching](#branching)
 - [Tagging](#tagging)
 - [Combining Branches](#combining-branches)
@@ -55,12 +56,16 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Status
 - `git status` — show current branch and working tree status
 
-## Staging & Committing
+## Staging
 - `git add <file-path>` — stage a specific file
 - `git add .` — stage all changes
 - `git restore --staged <file-path>` — unstage a specific file
 - `git restore --staged .` — unstage all changes
+
+## Committing
 - `git commit -m "<message>"` — commit staged changes locally
+- git commit --amend -m "<message>" — replace the latest commit with a new commit
+- git commit --amend --no-edit — replace the latest commit with a new commit while keeping the existing commit message
 
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
