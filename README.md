@@ -6,7 +6,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Table of Contents
 
-- [Setup & Configuration](#setup--configuration)
+- [Configuration](#configuration)
 - [Initialization](#initialization)
 - [Syncing](#syncing)
 - [Status](#status)
@@ -36,7 +36,6 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
 - `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
 - `git config --list --show-origin` — see list of active configurations
-- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 
 ## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
@@ -159,6 +158,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
+- `git lfs install` — initialize Git LFS on the current machine (for managing large binary files)
 - `git lfs track "<pattern>"` — track matching files with LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
