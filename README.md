@@ -28,7 +28,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Documentation](#documentation)
 
 
-## Setup & Configuration
+## Configuration
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
