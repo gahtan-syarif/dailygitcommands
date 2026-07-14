@@ -173,5 +173,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git lfs ls-files` — list LFS-tracked files
 
 ## Documentation
-- `git help <git-command>` — show manual for a specific git command
+- `git help <command|doc>` — show man page for a specific git command or documentation
 - `git help -a` — list all available git commands and their description
+- `git help -c` — list all available git configuration variables
+- `git help -g` — list all available git concept guides
