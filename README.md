@@ -167,17 +167,17 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
-- `git lfs install` — initialize Git LFS on the current machine (only done once per machine)
+- `git lfs install` — initialize git LFS on the current machine (only done once per machine)
 - `git lfs track "<pattern>"` — track matching files with LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 - `git lfs ls-files` — list LFS-tracked files
 
 > [!NOTE]
-> Git LFS is not included with git and must be installed separately before these commands can be used.
+> LFS is not included with git and must be installed separately before these commands can be used.
 
 ## Documentation
 - `git help <command|doc>` — show the manual page for a specific git command or documentation
-- `git help -a` — list all available git commands and their description
-- `git help -g` — list all available git concept guides and their description
-- `git help --user-interfaces` — list all available user-facing interfaces and their description
+- `git help -a` — list available git commands and their description
+- `git help -g` — list available git concept guides and their description
+- `git help --user-interfaces` — list available user-facing interfaces and their description
