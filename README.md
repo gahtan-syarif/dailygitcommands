@@ -1,5 +1,5 @@
 # Daily Git Commands
-Cheatsheet for the git commands and configuration that i personally use. Feel free to use it as reference.
+Cheatsheet for the Git commands and configuration that i personally use. Feel free to use it as reference.
 
 > [!NOTE]
 > Throughout this cheatsheet, `<commit>` can be any reference that identifies a specific commit, such as a commit hash, a branch name (this points to the last commit of that branch), a tag, a symbolic reference (e.g. `HEAD`), or revision expression (e.g. `HEAD~3`).
@@ -33,7 +33,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
-- `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern git hosting providers
+- `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern Git hosting providers
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
 - `git config --global alias.<name> "<command>"` — create a git alias
 - `git config --global --unset <configuration-name>` — unset a configuration
@@ -167,17 +167,17 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
-- `git lfs install` — initialize git LFS on the current machine (only done once per machine)
+- `git lfs install` — initialize Git LFS on the current machine (only done once per machine)
 - `git lfs track "<pattern>"` — track matching files with LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 - `git lfs ls-files` — list LFS-tracked files
 
 > [!NOTE]
-> LFS is not included with git and must be installed separately before these commands can be used.
+> Git LFS is typically not included with git on Linux and MacOS and must be installed separately before these commands can be used.
 
 ## Documentation
-- `git help <command|doc>` — show the manual page for a specific git command or documentation
-- `git help -a` — list available git commands and their description
-- `git help -g` — list available git concept guides and their description
+- `git help <command|doc>` — show the manual page for a specific command or documentation
+- `git help -a` — list available commands and their description
+- `git help -g` — list available concept guides and their description
 - `git help --user-interfaces` — list available user-facing interfaces and their description
