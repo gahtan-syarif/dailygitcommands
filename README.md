@@ -173,6 +173,9 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 - `git lfs ls-files` — list LFS-tracked files
 
+> [!NOTE]
+> Git LFS is not included with git and must be installed separately before these commands can be used.
+
 ## Documentation
 - `git help <command|doc>` — show the manual page for a specific git command or documentation
 - `git help -a` — list all available git commands and their description
