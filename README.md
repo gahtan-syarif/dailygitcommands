@@ -18,13 +18,13 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - [Undoing](#undoing) — Undoing changes
 - [Conflicts](#conflicts) — Resolving conflicts
 - [History](#history) — Exploring commit history
-- [Comparing](#comparing) — Viewing differences
+- [Comparing](#comparing) — Comparing commits and changes
 - [Stashing](#stashing) — Saving work for later
 - [Debugging](#debugging) — Finding buggy commits
-- [Mirroring](#mirroring) — Mirroring repositories
+- [Mirroring](#mirroring) — Mirroring repos
 - [Worktrees](#worktrees) — Multiple working directories
-- [Subtrees](#subtrees) — Managing subtrees
-- [Submodules](#submodules) — Managing submodules
+- [Subtrees](#subtrees) — Vendoring external repos
+- [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
 - [Documentation](#documentation) — Manuals and documentation
 
