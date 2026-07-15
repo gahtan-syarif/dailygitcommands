@@ -35,7 +35,8 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
 - `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern git hosting providers
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
-- `git config --global --unset <configuration-name>` — unset a configuration (revert the above commands)
+- `git config --global alias.<name> "<command>"` — create a git alias
+- `git config --global --unset <configuration-name>` — unset a configuration
 - `git config --list --show-origin` — see list of active configurations
 
 ## Initialization
@@ -43,7 +44,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
-- `git remote remove <remote-name>` — remove a remote (e.g. when migrating to a different git hosting provider)
+- `git remote remove <remote-name>` — remove a remote
 - `git remote -v` — list configured remotes and their URLs
 
 ## Syncing
