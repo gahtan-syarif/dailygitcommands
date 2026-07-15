@@ -108,7 +108,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 ## Conflicts
 - `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
 - `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
-- `git <rebase|cherry-pick> --skip` — skips the current conflicting commit and move to the next one
+- `git <rebase|cherry-pick|revert> --skip` — skips the current conflicting commit and move to the next one
 
 ## History
 - `git log --oneline --graph --decorate --all` — show full commit history
