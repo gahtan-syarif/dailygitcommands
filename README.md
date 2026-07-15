@@ -6,27 +6,27 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Table of Contents
 
-- [Configuration](#configuration)
-- [Initialization](#initialization)
-- [Syncing](#syncing)
-- [Status](#status)
-- [Staging](#staging)
-- [Committing](#committing)
-- [Branching](#branching)
-- [Tagging](#tagging)
-- [Integration](#integration)
-- [Undoing](#undoing)
-- [Conflicts](#conflicts)
-- [History](#history)
-- [Comparing](#comparing)
-- [Stashing](#stashing)
-- [Debugging](#debugging)
-- [Mirroring](#mirroring)
-- [Worktrees](#worktrees)
-- [Subtrees](#subtrees)
-- [Submodules](#submodules)
-- [LFS](#lfs)
-- [Documentation](#documentation)
+- [Configuration](#configuration) — Configure settings
+- [Initialization](#initialization) — Creating repos and remotes
+- [Syncing](#syncing) — Synchronizing with remote repos
+- [Status](#status) — Checking the current repo state
+- [Staging](#staging) — Preparing for a commit
+- [Committing](#committing) — Committing changes
+- [Branching](#branching) — Working with branches
+- [Tagging](#tagging) — Working with tags
+- [Integration](#integration) — Combining branches
+- [Undoing](#undoing) — Undoing changes
+- [Conflicts](#conflicts) — Resolving conflicts
+- [History](#history) — Exploring commit history
+- [Comparing](#comparing) — Viewing differences
+- [Stashing](#stashing) — Saving work for later
+- [Debugging](#debugging) — Finding buggy commits
+- [Mirroring](#mirroring) — Mirroring repositories
+- [Worktrees](#worktrees) — Multiple working directories
+- [Subtrees](#subtrees) — Managing subtrees
+- [Submodules](#submodules) — Managing submodules
+- [LFS](#lfs) — Managing large binary files
+- [Documentation](#documentation) — Manuals and documentation
 
 
 ## Configuration
