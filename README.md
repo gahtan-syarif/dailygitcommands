@@ -174,7 +174,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git lfs ls-files` — list files tracked by Git LFS
 
 > [!NOTE]
-> Git LFS is typically not included with git on Linux and MacOS and must be installed separately before these commands can be used.
+> Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
 
 ## Documentation
 - `git help <command|doc>` — show the manual page for a specific command or documentation
