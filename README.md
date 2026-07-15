@@ -95,7 +95,7 @@ Cheatsheet for the git commands and configuration that i personally use. Feel fr
 
 ## Undoing
 - `git restore <file-path>` — discard unstaged changes for a specific file
-- `git restore .` — discard unstaged changes in the working directory
+- `git restore .` — discard unstaged changes in the current directory
 - `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the working directory unchanged
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
