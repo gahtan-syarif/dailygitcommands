@@ -18,7 +18,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Undoing](#undoing) — Undoing changes
 - [Conflicts](#conflicts) — Resolving conflicts
 - [History](#history) — Exploring commit history
-- [Comparing](#comparing) — Comparing commits and changes
+- [Comparing](#comparing) — Inspecting differences
 - [Stashing](#stashing) — Saving work for later
 - [Debugging](#debugging) — Finding buggy commits
 - [Mirroring](#mirroring) — Mirroring repos
