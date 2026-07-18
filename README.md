@@ -114,6 +114,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 ## History
 - `git log --oneline --graph --decorate --all` — show full commit history
 - `git log --oneline --graph --decorate <commit>` — show commit history up to a specified commit
+- `git log --oneline --graph --decorate <commitA>..<commitB>` — show commits reachable from `<commitB>` but not from `<commitA>` (e.g. commits unique to a branch)
 - `git log --oneline  --decorate --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
 - `git show <commit>` — show commit info
