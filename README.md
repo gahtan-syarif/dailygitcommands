@@ -58,9 +58,9 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git status` — show current branch and working tree status
 
 ## Staging
-- `git add <file-path>` — stage a specific file
+- `git add <path>` — stage a specific file or directory
 - `git add .` — stage all changes in the current directory 
-- `git restore --staged <file-path>` — unstage a specific file
+- `git restore --staged <path>` — unstage a specific file or directory
 - `git restore --staged .` — unstage all changes in the current directory 
 
 ## Committing
