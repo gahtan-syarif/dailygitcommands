@@ -33,7 +33,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git config --global user.name "<author-name>"` — set author name for commit metadata
 - `git config --global user.email "<author-email>"` — set author email for commit metadata
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
-- `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repositories to match the default branch name used by modern Git hosting providers
+- `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repos to match the default branch name used by modern Git hosting providers
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
 - `git config --global alias.<name> "<command>"` — create a git alias
 - `git config --global --unset <configuration-name>` — unset a configuration
@@ -158,11 +158,11 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git worktree list` — list working trees
 
 ## Subtrees
-- `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repository as a subtree (e.g. a third party library)
-- `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repository
+- `git subtree add --squash --prefix=<path> <repo-url> <commit>` — add a repo as a subtree (e.g. a third party library)
+- `git subtree pull --squash --prefix=<path> <repo-url> <commit>` — sync the subtree to a specific commit from its upstream repo
 
 ## Submodules
-- `git submodule add <repo-url> <path>` — add a repository as a submodule
+- `git submodule add <repo-url> <path>` — add a repo as a submodule
 - `git submodule sync --recursive` — refresh local submodule remote URLs
 - `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
 - `git submodule status --recursive` — show the current commit and status of each submodule
