@@ -95,7 +95,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git cherry-pick <commit>` — copy a specific commit from a diverged branch onto the current branch
 
 ## Undoing
-- `git restore <file-path>` — discard unstaged changes for a specific file
+- `git restore <path>` — discard unstaged changes in a specific file or directory
 - `git restore .` — discard unstaged changes in the current directory
 - `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the working directory unchanged
 - `git reset --hard` — reset to last local commit
