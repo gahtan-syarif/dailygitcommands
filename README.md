@@ -178,5 +178,5 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 > Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
 
 ## Documentation
-- `git help <command|doc>` — show the manual page for a specific command or documentation
 - `git help -a` — list all available commands and docs as well as their description
+- `git help <command|doc>` — show the manual page for a specific command or documentation
