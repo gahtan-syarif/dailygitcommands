@@ -179,6 +179,4 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 ## Documentation
 - `git help <command|doc>` — show the manual page for a specific command or documentation
-- `git help -a` — list available commands and their description
-- `git help -g` — list available concept guides and their description
-- `git help --user-interfaces` — list available user-facing interfaces and their description
+- `git help -a` — list all available commands and docs as well as their description
