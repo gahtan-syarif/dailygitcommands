@@ -173,6 +173,10 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git lfs untrack "<pattern>"` — stop tracking matching files with Git LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 - `git lfs ls-files` — list files tracked by Git LFS
+- `git lfs lock <file-path>` — lock a file to prevent others from pushing changes to it
+- `git lfs unlock <file-path>` — unlock a file after you're done editing it
+- `git lfs unlock --force <path>` — force-unlock a file locked by someone else (typically requires admin permissions)
+- `git lfs locks` — list active locks in the repository
 
 > [!NOTE]
 > Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
