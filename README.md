@@ -46,7 +46,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
-- `git remote add <remote-name> <repo-url>` — link an additional remote repo (e.g. `upstream` or someone else's fork)
+- `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from (`upstream`) or someone else's fork
 - `git remote remove <remote-name>` — remove a remote
 - `git remote -v` — list configured remotes and their URLs
 
