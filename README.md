@@ -36,6 +36,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git config --global credential.helper 'cache --timeout=<seconds>'` — cache credentials (e.g. GitHub username and PAT) in RAM for the specified number of seconds to avoid repeatedly typing credentials (not supported on Windows)
 - `git config --global init.defaultBranch main` — use `main` (instead of `master`) as the default branch name for new repos to match the default branch name used by modern Git hosting providers
 - `git config --global merge.conflictStyle zdiff3` — use the better `zdiff3` conflict style instead of the default `merge` style
+- `git config --global core.fsmonitor true` — enable file system monitor to speed up working tree scans
 - `git config --global alias.<name> "<command>"` — create a git alias
 - `git config --global --unset <configuration-name>` — unset a configuration
 - `git config --list --show-origin` — see list of active configurations
