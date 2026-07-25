@@ -186,9 +186,9 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git clone --filter=blob:none --sparse <repo-url>` — partially clone a repo and initialize it with a sparse checkout
 - `git sparse-checkout set <directory>...` — populate only the specified directories
 - `git sparse-checkout add <directory>...` — add more directories to the sparse checkout
-- `git sparse-checkout list` — list directories included in the sparse checkout
 - `git sparse-checkout reapply` — reapply the sparse checkout rules to the working tree
 - `git sparse-checkout disable` — restore the full working tree
+- `git sparse-checkout list` — list directories included in the sparse checkout
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
