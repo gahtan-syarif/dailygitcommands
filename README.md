@@ -184,8 +184,8 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 > Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
 
 ## Sparse
-- `git sparse-checkout set <directory>...` — populate only the specified directories
-- `git sparse-checkout add <directory>...` — add more directories to the sparse checkout
+- `git sparse-checkout set <dir-path>...` — populate only the specified directories
+- `git sparse-checkout add <dir-path>...` — add more directories to the sparse checkout
 - `git sparse-checkout reapply` — reapply the sparse checkout rules to the working tree
 - `git sparse-checkout disable` — restore the full working tree
 - `git sparse-checkout list` — list directories included in the sparse checkout
