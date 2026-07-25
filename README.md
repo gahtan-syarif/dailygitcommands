@@ -51,8 +51,8 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git remote -v` — list configured remotes and their URLs
 
 ## Syncing
-- `git fetch --prune --all` — update all remote tracking refs and remove stale remote-tracking branches
-- `git fetch <remote-name> --tags` — fetch all tags from a remote
+- `git fetch --prune --all` — update all remote tracking branches and remove stale ones
+- `git fetch <remote-name> --tags --prune-tags` — fetch all tags from a remote and remove stale ones
 - `git pull` — fetch latest commits from remote branch and merge them into current local branch
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
 - `git push` — push commits from current local branch to the configured remote branch
