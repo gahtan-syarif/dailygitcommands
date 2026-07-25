@@ -54,8 +54,8 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git fetch --prune --all` — update all remote tracking refs and remove stale remote-tracking branches
 - `git pull` — fetch latest commits from remote branch and merge them into current local branch
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
-- `git push` — push commits from current local branch to remote branch
-- `git push --force` — force sync a remote branch to match the current local one
+- `git push` — push commits from current local branch to the configured remote branch
+- `git push --force` — force sync the configured remote branch to match the current local one
 
 ## Status
 - `git status` — show current branch and working tree status
