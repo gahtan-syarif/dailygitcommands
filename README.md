@@ -42,6 +42,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 ## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
+- `git clone --filter=blob:none --sparse <repo-url>` — clone a large repo by downloading file contents on demand and checking out only what you need (see [Sparse](#sparse))
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
@@ -183,7 +184,6 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 > Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
 
 ## Sparse
-- `git clone --filter=blob:none --sparse <repo-url>` — partially clone a repo and initialize it with a sparse checkout
 - `git sparse-checkout set <directory>...` — populate only the specified directories
 - `git sparse-checkout add <directory>...` — add more directories to the sparse checkout
 - `git sparse-checkout reapply` — reapply the sparse checkout rules to the working tree
