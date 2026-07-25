@@ -26,6 +26,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Subtrees](#subtrees) — Vendoring external repos
 - [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
+- [Sparse](#sparse) — Working with large repos selectively
 - [Documentation](#documentation) — Manuals and documentation
 
 
@@ -180,6 +181,14 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 > [!NOTE]
 > Git LFS is typically not included with Git on Linux and MacOS and must be installed separately before these commands can be used.
+
+## Sparse
+- `git clone --filter=blob:none --sparse <repo-url>` — partially clone a repo and initialize it with a sparse checkout
+- `git sparse-checkout set <directory>...` — populate only the specified directories
+- `git sparse-checkout add <directory>...` — add more directories to the sparse checkout
+- `git sparse-checkout list` — list directories included in the sparse checkout
+- `git sparse-checkout reapply` — reapply the sparse checkout rules to the working tree
+- `git sparse-checkout disable` — restore the full working tree
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
