@@ -174,7 +174,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
 - `git lfs ls-files` — list files tracked by Git LFS
 - `git lfs lock <file-path>` — lock a file to prevent others from pushing changes to it
-- `git lfs unlock <file-path>` — unlock a file after you're done editing it
+- `git lfs unlock <file-path>` — unlock a locked file
 - `git lfs unlock --force <file-path>` — force-unlock a file locked by someone else (typically requires admin permissions)
 - `git lfs locks` — list active locks in the repository
 
