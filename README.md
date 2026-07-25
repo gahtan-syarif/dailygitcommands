@@ -42,7 +42,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 ## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
-- `git clone --filter=blob:none --sparse <repo-url>` — clone a large repo by downloading and checking out only what you need (see [Sparse](#sparse))
+- `git clone --filter=blob:none --sparse <repo-url>` — clone a large repo by downloading and checking out only what you need (see the [Sparse](#sparse) section)
 - `git init` — initialize a new local git repo in the current directory 
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add upstream <repo-url>` — link local repo to the upstream repo of your fork (in cases where `origin` is a fork of someone else's repo)
