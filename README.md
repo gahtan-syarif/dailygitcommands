@@ -52,10 +52,15 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 ## Syncing
 - `git fetch --prune --all` — update all remote tracking refs and remove stale remote-tracking branches
+- `git fetch <remote-name> --tags` — fetch all tags from a remote
 - `git pull` — fetch latest commits from remote branch and merge them into current local branch
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
+- `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
+- `git push origin <tag-name>` — push a local tag to remote
+- `git push origin --tags` — push all local tags to remote
+- `git push origin --delete <branch-name|tag-name>` — delete a remote branch or tag
 
 ## Status
 - `git status` — show current branch and working tree status
@@ -80,16 +85,11 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git branch -u <remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
 - `git branch -vva` — list both local and remote branches and their info
-- `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
-- `git push origin --delete <branch-name>` — delete a remote branch
 
 ## Tagging
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local tag for a specific commit
 - `git tag -d <tag-name>` — delete a local tag
 - `git tag -n` — list all local tags
-- `git push origin <tag-name>` — push a local tag to remote
-- `git push origin --tags` — push all local tags to remote
-- `git push origin --delete <tag-name>` — delete a remote tag
 
 ## Integration
 - `git merge <branch-name>` — merge another branch into the current branch
