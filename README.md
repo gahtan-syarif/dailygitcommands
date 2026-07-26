@@ -28,6 +28,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
+- [Maintenance](#maintenance) — Optimize repository performance for large repos
 - [Documentation](#documentation) — Manuals and documentation
 
 
@@ -195,6 +196,14 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git sparse-checkout reapply` — reapply the sparse checkout rules to the working tree
 - `git sparse-checkout disable` — restore the full working tree
 - `git sparse-checkout list` — list directories included in the sparse checkout
+
+### Maintenance
+- `git maintenance start` — enable scheduled background repository maintenance
+- `git maintenance stop` — disable scheduled background repository maintenance
+- `git maintenance register` — register the current repository for scheduled maintenance
+- `git maintenance unregister` — unregister the current repository from scheduled maintenance
+- `git maintenance run` — run the default maintenance tasks immediately
+- `git maintenance run --auto` — run maintenance only if Git determines it is needed
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
