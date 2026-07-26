@@ -46,7 +46,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git clone <repo-url>` — clone a remote repo locally
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
 - `git clone --depth 1 <repo-url>` — clone only the latest commit, minimizing download size when commit history is not needed
-- `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
+- `git clone --mirror <repo-url>` — create a local mirror of a remote repo
 - `git init` — initialize a new local git repo in the current directory
 
 ## Remotes
@@ -65,7 +65,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 ## Pushing
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
-- `git push --mirror <target-repo-url>` — make a target repo match a local mirror exactly
+- `git push --mirror <repo-url>` — make a target repo match a local mirror exactly
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
