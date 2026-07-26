@@ -28,7 +28,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
-- [Maintenance](#maintenance) — Optimize repository performance for large repos
+- [Maintenance](#maintenance) — Optimize storage and performance for large repos
 - [Documentation](#documentation) — Manuals and documentation
 
 
