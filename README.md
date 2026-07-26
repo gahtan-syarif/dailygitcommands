@@ -174,6 +174,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git submodule add <repo-url> <path>` — add a repo as a submodule
 - `git submodule sync --recursive` — refresh local submodule remote URLs
 - `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
+- `git submodule deinit --all` — unregister all submodules from the working tree and remove their working directory
 - `git submodule status --recursive` — show the current commit and status of each submodule
 
 ## LFS
