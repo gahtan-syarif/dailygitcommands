@@ -9,7 +9,8 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Configuration](#configuration) — Configure settings
 - [Initialization](#initialization) — Creating repos
 - [Remotes](#remotes) — Configuring remote repos
-- [Syncing](#syncing) — Synchronizing with remote repos
+- [Syncing](#syncing) — Downloading changes from remote repos
+- [Pushing](#pushing) — Uploading changes to remote repos
 - [Status](#status) — Checking the current repo state
 - [Staging](#staging) — Preparing for a commit
 - [Committing](#committing) — Committing changes
@@ -55,13 +56,17 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 
 ## Syncing
 - `git fetch --prune --all` — update all remote tracking branches and remove stale ones
+- `git fetch <remote-name> --tags` — fetch all tags from a remote
 - `git fetch <remote-name> --prune --prune-tags` — fetch all tags from a remote and remove local ones that no longer exist upstream
 - `git pull` — fetch latest commits from remote branch and merge them into current local branch
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
+
+## Pushing
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
 - `git push --mirror <target-repo-url>` — make a target repo match a local mirror exactly
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
+- `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <branch-name|tag-name>` — delete a remote branch or tag
 
