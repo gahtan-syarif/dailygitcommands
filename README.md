@@ -7,7 +7,8 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 ## Table of Contents
 
 - [Configuration](#configuration) — Configure settings
-- [Initialization](#initialization) — Creating repos and remotes
+- [Initialization](#initialization) — Creating repos
+- [Remotes](#remotes) — Configuring remote repos
 - [Syncing](#syncing) — Synchronizing with remote repos
 - [Status](#status) — Checking the current repo state
 - [Staging](#staging) — Preparing for a commit
@@ -21,7 +22,6 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - [Comparing](#comparing) — Inspecting differences
 - [Stashing](#stashing) — Saving work for later
 - [Debugging](#debugging) — Finding buggy commits
-- [Mirroring](#mirroring) — Mirroring repos
 - [Worktrees](#worktrees) — Multiple working directories
 - [Subtrees](#subtrees) — Vendoring external repos
 - [Submodules](#submodules) — Linking external repos
@@ -44,7 +44,10 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 ## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
-- `git init` — initialize a new local git repo in the current directory 
+- `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
+- `git init` — initialize a new local git repo in the current directory
+
+## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from (`upstream`) or someone else's fork
 - `git remote remove <remote-name>` — remove a remote
@@ -57,6 +60,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git pull --rebase` — fetch latest commits from remote branch and then rebase the current local branch
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
+- `git push --mirror <target-repo-url>` — make a target repo match a local mirror exactly
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <branch-name|tag-name>` — delete a remote branch or tag
@@ -149,10 +153,6 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git bisect bad <commit>` — mark a known bad commit
 - `git bisect run <command>` — automate the search by running a test script
 - `git bisect reset` — exit bisect mode and return to the original branch
-
-## Mirroring
-- `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
-- `git push --mirror <target-repo-url>` — make the target repo match the local mirror exactly
 
 ## Worktrees
 - `git worktree add <path> <branch-name>` — check out an existing branch in a separate directory (creates a new working tree)
