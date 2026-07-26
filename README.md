@@ -45,6 +45,7 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 ## Initialization
 - `git clone <repo-url>` — clone a remote repo locally
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
+- `git clone --depth 1 <repo-url>` — clone only the latest commit, minimizing download size when commit history is not needed
 - `git clone --mirror <source-repo-url>` — create a local mirror of the original repo
 - `git init` — initialize a new local git repo in the current directory
 
