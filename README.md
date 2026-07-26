@@ -58,7 +58,6 @@ Cheatsheet for the Git commands and configuration that i personally use. Feel fr
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
-- `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
 - `git push origin --delete <branch-name|tag-name>` — delete a remote branch or tag
 
