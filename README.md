@@ -176,6 +176,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git submodule update --init --recursive` — initialize missing submodules and sync all submodules to the commits recorded in the superproject
 - `git submodule deinit --all` — unregister all submodules from the working tree and remove their working directory
 - `git submodule status --recursive` — show the current commit and status of each submodule
+- `git rm <path>` — remove a submodule
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
