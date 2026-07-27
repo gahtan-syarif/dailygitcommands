@@ -106,7 +106,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
 - `git rebase <branch-name>` — rebases current branch on top of another branch
-- `git cherry-pick <commit>` — copy a specific commit from a diverged branch onto the current branch
+- `git cherry-pick <commit>...` — copy one or more commits from a diverged branch onto the current branch
 
 ## Undoing
 - `git restore <path>` — discard unstaged changes in a specific file or directory
@@ -183,7 +183,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
 - `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
 - `git apply <file-path>...` — apply the changes from one or more patch files to the working tree without creating a commit
-- `git am -3 <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
+- `git am <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
