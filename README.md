@@ -180,9 +180,9 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git rm <path>` — remove a submodule
 
 ## Patches
-- `git format-patch -o <dir> -1 <commit>` — create a patch file for a specific commit
-- `git format-patch -o <dir> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
-- `git apply <patch>` — apply the changes from a patch file to the working tree without creating a commit
+- `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
+- `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
+- `git apply <file-path>` — apply the changes from a patch file to the working tree without creating a commit
 - `git am <file-path>` — apply and commit a patch created by `git format-patch`, preserving commit metadata
 
 ## LFS
