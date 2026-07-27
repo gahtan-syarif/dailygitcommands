@@ -22,11 +22,11 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [History](#history) — Exploring commit history
 - [Comparing](#comparing) — Inspecting differences
 - [Stashing](#stashing) — Saving work for later
+- [Patches](#patches) — Create and apply patches
 - [Debugging](#debugging) — Finding buggy commits
 - [Worktrees](#worktrees) — Multiple working directories
 - [Subtrees](#subtrees) — Vendoring external repos
 - [Submodules](#submodules) — Linking external repos
-- [Patches](#patches) — Create and apply patches
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimize storage and performance for large repos
@@ -155,6 +155,12 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git stash drop stash@{<index-number>}` — delete a specific stash
 - `git stash list` — list all stashes
 
+## Patches
+- `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
+- `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
+- `git apply <file-path>...` — apply the changes from one or more patch files to the working tree without creating a commit
+- `git am <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
+
 ## Debugging
 - `git bisect start` — start a binary search to find the commit that introduced a bug
 - `git bisect good <commit>` — mark a known good commit
@@ -178,12 +184,6 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git submodule deinit --all` — unregister all submodules from the working tree and remove their working directory
 - `git submodule status --recursive` — show the current commit and status of each submodule
 - `git rm <path>` — remove a submodule
-
-## Patches
-- `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
-- `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
-- `git apply <file-path>...` — apply the changes from one or more patch files to the working tree without creating a commit
-- `git am <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
