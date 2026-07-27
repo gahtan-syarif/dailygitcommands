@@ -26,6 +26,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Worktrees](#worktrees) — Multiple working directories
 - [Subtrees](#subtrees) — Vendoring external repos
 - [Submodules](#submodules) — Linking external repos
+- [Patches](#patches) — Create and apply patches
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimize storage and performance for large repos
@@ -177,6 +178,12 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git submodule deinit --all` — unregister all submodules from the working tree and remove their working directory
 - `git submodule status --recursive` — show the current commit and status of each submodule
 - `git rm <path>` — remove a submodule
+
+## Patches
+- `git format-patch -o <dir> -1 <commit>` — create a patch file for a specific commit
+- `git format-patch -o <dir> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
+- `git apply <patch>` — apply the changes from a patch file to the working tree without creating a commit
+- `git am <file-path>` — apply and commit a patch created by `git format-patch`, preserving commit metadata
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
