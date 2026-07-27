@@ -121,9 +121,9 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git clean -fdx` — same as above but also removes gitignored files
 
 ## Conflicts
-- `git <merge|rebase|cherry-pick|revert> --abort` — aborts the operation if there's a conflict
-- `git <merge|rebase|cherry-pick|revert> --continue` — continues the operation after resolving conflict
-- `git <rebase|cherry-pick|revert> --skip` — skips the current conflicting commit and move to the next one
+- `git <merge|rebase|cherry-pick|revert|am> --abort` — aborts the operation if there's a conflict
+- `git <merge|rebase|cherry-pick|revert|am> --continue` — continues the operation after resolving conflict
+- `git <rebase|cherry-pick|revert|am> --skip` — skips the current conflicting commit and move to the next one
 
 ## History
 - `git log --oneline --graph --all` — show full commit history
@@ -182,8 +182,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Patches
 - `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
 - `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
-- `git apply <file-path>` — apply the changes from a patch file to the working tree without creating a commit
-- `git am <file-path>` — apply and commit a patch created by `git format-patch`, preserving commit metadata
+- `git apply <file-path>...` — apply the changes from one or more patch files to the working tree without creating a commit
+- `git am -3 <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
