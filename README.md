@@ -157,7 +157,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Patches
 - `git format-patch -o <dir-path> -1 <commit>` — create a patch file for a specific commit
-- `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not `<commitA>`
+- `git format-patch -o <dir-path> <commitA>..<commitB>` — create patches for all commits reachable by `<commitB>` but not from `<commitA>`
 - `git apply <file-path>...` — apply the changes from one or more patch files to the working tree without creating a commit
 - `git am <file-path>...` — apply and commit the changes from one or more patch files, preserving commit metadata
 
