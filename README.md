@@ -29,7 +29,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
-- [Maintenance](#maintenance) — Optimize storage and performance for large repos
+- [Maintenance](#maintenance) — Optimize performance for large repos
 - [Documentation](#documentation) — Manuals and documentation
 
 
