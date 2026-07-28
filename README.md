@@ -9,8 +9,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Configuration](#configuration) — Configure settings
 - [Initialization](#initialization) — Creating repos
 - [Remotes](#remotes) — Configuring remote repos
-- [Syncing](#syncing) — Downloading changes from remote repos
-- [Pushing](#pushing) — Uploading changes to remote repos
+- [Syncing](#syncing) — Downloading changes from upstream
+- [Pushing](#pushing) — Uploading changes to upstream
 - [Status](#status) — Checking the current repo state
 - [Staging](#staging) — Preparing for a commit
 - [Committing](#committing) — Committing changes
