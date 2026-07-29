@@ -215,7 +215,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git maintenance run --auto` — run maintenance only if Git determines it is needed
 
 ## Exporting
-- `git archive --format=<format> --output=<file-path> <commit>` — export the contents of a commit as an archive (e.g. `zip`, `tar`)
+- `git archive --format=<format> -o <file-path> <commit>` — export the contents of a commit as an archive (e.g. `zip`, `tar`, `tar.gz`)
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
