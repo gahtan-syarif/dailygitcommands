@@ -77,10 +77,9 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git status` — show current branch and working tree status
 
 ## Staging
-- `git add <path>` — stage a specific file or directory
-- `git add .` — stage all changes in the current directory 
-- `git restore --staged <path>` — unstage a specific file or directory
-- `git restore --staged .` — unstage all changes in the current directory 
+- `git add -a` — stage all changes
+- `git add <path>` — stage changes in a specific file or directory
+- `git restore --staged <path>` — unstage changes in a specific file or directory
 
 ## Committing
 - `git commit -m "<message>"` — commit staged changes locally
@@ -110,7 +109,6 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Undoing
 - `git restore <path>` — discard unstaged changes in a specific file or directory
-- `git restore .` — discard unstaged changes in the current directory
 - `git reset --soft HEAD~<number>` — uncommit the last specified number of commits while keeping the working directory unchanged
 - `git reset --hard` — reset to last local commit
 - `git reset --hard @{u}` — reset to last remote commit
