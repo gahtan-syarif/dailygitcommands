@@ -30,6 +30,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimize performance for large repos
+- [Exporting](#exporting) — Export repo contents for distribution
 - [Documentation](#documentation) — Manuals and documentation
 
 
@@ -212,6 +213,9 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git maintenance unregister` — unregister the current repository from scheduled maintenance
 - `git maintenance run` — run the default maintenance tasks immediately
 - `git maintenance run --auto` — run maintenance only if Git determines it is needed
+
+## Exporting
+- `git archive --format=<format> --output=<file-path> <commit>` — export the contents of a commit as an archive (e.g. `zip`, `tar`)
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
