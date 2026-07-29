@@ -77,7 +77,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git status` — show current branch and working tree status
 
 ## Staging
-- `git add -a` — stage all changes
+- `git add -A` — stage all changes
 - `git add <path>` — stage changes in a specific file or directory
 - `git restore --staged <path>` — unstage changes in a specific file or directory
 
