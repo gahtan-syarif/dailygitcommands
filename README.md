@@ -52,6 +52,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git clone --depth 1 <repo-url>` — clone only the latest commit, minimizing download size when commit history is not needed
 - `git clone --mirror <repo-url>` — create a local mirror of a remote repo
 - `git init` — initialize a new local git repo in the current directory
+- `git init --bare` — initialize a bare repo with no working tree in the current directory (used for hosting a Git server)
 
 ## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
