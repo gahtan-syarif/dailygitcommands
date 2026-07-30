@@ -93,8 +93,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Branching
 - `git switch <branch-name>` — switch to an existing branch (also auto-creates a local branch that tracks a matching remote branch if available)
 - `git switch --detach <commit>` — switch to a specific commit (in a detached HEAD state)
-- `git switch -c <branch-name>` — create a local branch from the current branch or commit and switch to it
-- `git branch <branch-name>` — create a local branch from the current branch or commit without switching
+- `git switch -c <branch-name>` — create a local branch from the current commit and switch to it
+- `git branch <branch-name>` — create a local branch from the current commit without switching
 - `git branch -D <branch-name>` — force delete a local branch
 - `git branch -u <remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
@@ -108,8 +108,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Integration
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
-- `git rebase <commit>` — rebase the current branch onto another branch or commit
-- `git rebase -i <commit>` — interactively rebase the current branch onto another branch or commit (usually used for rewriting commit history)
+- `git rebase <commit>` — rebase the current branch onto the specified commit
+- `git rebase -i <commit>` — interactively rebase the current branch onto the specified commit (usually used for rewriting commit history)
 - `git cherry-pick <commit>...` — copy one or more commits from a diverged branch onto the current branch
 
 ## Undoing
