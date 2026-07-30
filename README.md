@@ -163,6 +163,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git stash apply stash@{<index-number>}` — restore a specific stash without removing it
 - `git stash drop` — delete the most recent stash
 - `git stash drop stash@{<index-number>}` — delete a specific stash
+- `git stash clear` — delete all stashes
 - `git stash list` — list all stashes
 
 ## Patches
