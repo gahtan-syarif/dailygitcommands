@@ -100,7 +100,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git switch --detach <commit>` — switch to a specific commit (in a detached HEAD state)
 - `git switch -c <branch-name>` — create a local branch from the current commit and switch to it
 - `git branch <branch-name>` — create a local branch from the current commit without switching
-- `git branch -m <branch-name>` — rename the current local branch
+- `git branch -m <new-name>` — rename the current local branch
 - `git branch -D <branch-name>` — force delete a local branch
 - `git branch -u <remote-name>/<branch-name>` — set the current local branch to track an existing remote branch
 - `git branch --unset-upstream` — unlink the remote branch from the current local branch
