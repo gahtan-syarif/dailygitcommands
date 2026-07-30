@@ -230,7 +230,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git fsck` — check repo integrity and detect corrupted, missing, or unreachable objects
 
 ## Exporting
-- `git archive --format=<format> -o <file-path> <commit>` — export the contents of a commit as an archive (e.g. `zip`, `tar`, `tar.gz`)
+- `git archive --format=<format> -o <file-path> <commit>` — create an archive (e.g. `zip`, `tar`, `tar.gz`) containing a snapshot of the repo contents at a specific commit
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
