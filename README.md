@@ -107,6 +107,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git branch -vva` — list both local and remote branches and their info
 
 ## Tagging
+- `git tag <tag-name> <commit>` — create a lightweight tag for a specific commit
 - `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local tag for a specific commit
 - `git tag -d <tag-name>` — delete a local tag
 - `git tag -n` — list all local tags
