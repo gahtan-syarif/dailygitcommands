@@ -108,7 +108,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Integration
 - `git merge <branch-name>` — merge another branch into the current branch
 - `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
-- `git rebase <branch-name>` — rebases current branch on top of another branch
+- `git rebase <commit>` — rebases current branch onto another branch or commit
+- `git rebase -i <commit>` — interactively rebase the current branch onto another branch or commit (usually used for rewriting commit history)
 - `git cherry-pick <commit>...` — copy one or more commits from a diverged branch onto the current branch
 
 ## Undoing
