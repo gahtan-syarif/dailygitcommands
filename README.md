@@ -8,6 +8,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 - [Configuration](#configuration) — Configure settings
 - [Initialization](#initialization) — Creating repos
+- [Cloning](#cloning) — Clone an existing repo
 - [Remotes](#remotes) — Configuring remote repos
 - [Syncing](#syncing) — Downloading changes from upstream
 - [Pushing](#pushing) — Uploading changes to upstream
@@ -48,17 +49,21 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git config --list --show-origin` — see list of active configurations
 
 ## Initialization
+- `git init` — initialize a new local git repo in the current directory
+- `git init --bare` — initialize a bare repo with no working tree in the current directory (used for hosting a Git server)
+
+## Cloning
 - `git clone <repo-url>` — clone a remote repo locally
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
 - `git clone --depth 1 <repo-url>` — clone only the latest commit, minimizing download size when commit history is not needed
 - `git clone --mirror <repo-url>` — create a local mirror of a remote repo
-- `git init` — initialize a new local git repo in the current directory
-- `git init --bare` — initialize a bare repo with no working tree in the current directory (used for hosting a Git server)
 
 ## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from (`upstream`) or someone else's fork
 - `git remote remove <remote-name>` — remove a remote
+- `git remote rename <old-name> <new-name>` — rename a configured remote
+- `git remote set-url <remote-name> <repo-url>` — change the URL of an existing remote
 - `git remote -v` — list configured remotes and their URLs
 
 ## Syncing
