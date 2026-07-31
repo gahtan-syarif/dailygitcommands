@@ -62,6 +62,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
 - `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from (`upstream`) or someone else's fork
+- `git remote add <remote-name> <file-path>` — add a bundle file as a read-only remote
 - `git remote remove <remote-name>` — remove a remote
 - `git remote rename <old-name> <new-name>` — rename a configured remote
 - `git remote set-url <remote-name> <repo-url>` — change the URL of an existing remote
