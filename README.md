@@ -32,7 +32,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimize performance for large repos
 - [Diagnostics](#diagnostics) — Check repo health
-- [Exporting](#exporting) — Export repo contents for distribution
+- [Exporting](#exporting) — Export repo contents
 - [Documentation](#documentation) — Manuals and documentation
 
 
@@ -57,6 +57,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git clone --filter=blob:none --sparse <repo-url>` — clone an extremely large repo by downloading and checking out files as needed (see the [Sparse](#sparse) section)
 - `git clone --depth 1 <repo-url>` — clone only the latest commit, minimizing download size when commit history is not needed
 - `git clone --mirror <repo-url>` — create a local mirror of a remote repo
+- `git clone <file-path>` — clone a repository from a bundle file
 
 ## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
@@ -230,7 +231,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git fsck` — check repo integrity and detect corrupted, missing, or unreachable objects
 
 ## Exporting
-- `git archive --format=<format> -o <file-path> <commit>` — create an archive (e.g. `zip`, `tar`, `tar.gz`) containing a snapshot of the repo contents at a specific commit
+- `git archive --format=<format> -o <file-path> <commit>` — create an archive (`zip`, `tar`, `tar.gz`, etc...) containing a snapshot of the repo contents at a specific commit
+- `git bundle create <file-path> --all` — create a single binary-file backup of the entire repository
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
