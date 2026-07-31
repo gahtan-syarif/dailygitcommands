@@ -235,6 +235,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git archive --format=<format> -o <file-path> <commit>` — create an archive (`zip`, `tar`, `tar.gz`, etc.) containing a snapshot of the repo contents at a specific commit (e.g. for distributing versioned releases)
 - `git bundle create <file-path> --all` — create a bundle file containing the entire repo and its history (e.g. for creating repo backups)
 - `git bundle create <file-path> <branch-name>...` — create a bundle file containing the specified branches and their history
+- `git bundle create <file-path> <commit>..<branch-name>` — create a bundle file containing the specified branch and its history while excluding commits reachable from `<commit>` (e.g. for incremental backups)
 
 ## Documentation
 - `git help -a` — list all available commands and docs as well as their description
