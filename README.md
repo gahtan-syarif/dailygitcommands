@@ -22,6 +22,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Conflicts](#conflicts) — Resolving conflicts
 - [History](#history) — Exploring commit history
 - [Comparing](#comparing) — Inspecting differences
+- [Notes](#notes) — Annotating commits
 - [Stashing](#stashing) — Saving work for later
 - [Patches](#patches) — Create and apply patches
 - [Debugging](#debugging) — Finding buggy commits
@@ -163,6 +164,15 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 > [!NOTE]
 > Append `--stat` to `git diff` to show a per-file summary with total insertions and deletions instead of the full patch.
+
+## Notes
+- `git notes add -m "<message>" <commit>` — attach a note to a commit
+- `git notes append -m "<message>" <commit>` — append to an existing note attached to a commit
+- `git notes show <commit>` — show the note attached to a commit
+- `git notes edit <commit>` — edit the note attached to a commit
+- `git notes remove <commit>` — remove the note attached to a commit
+- `git notes prune` — remove notes that no longer reference existing commits
+- `git notes list` — list all notes and the commits they are attached to
 
 ## Stashing
 - `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
