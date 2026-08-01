@@ -10,7 +10,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Initialization](#initialization) — Creating repos
 - [Cloning](#cloning) — Clone an existing repo
 - [Remotes](#remotes) — Configuring remote repos
-- [Syncing](#syncing) — Downloading changes from upstream
+- [Syncing](#syncing) — Fetching changes from upstream
 - [Pushing](#pushing) — Uploading changes to upstream
 - [Status](#status) — Checking the current repo state
 - [Staging](#staging) — Preparing for a commit
@@ -31,7 +31,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Submodules](#submodules) — Linking external repos
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
-- [Maintenance](#maintenance) — Optimize performance for large repos
+- [Maintenance](#maintenance) — Optimizing repo performance
 - [Diagnostics](#diagnostics) — Check repo health
 - [Exporting](#exporting) — Export repo contents
 - [Documentation](#documentation) — Manuals and documentation
