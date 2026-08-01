@@ -144,6 +144,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git log --oneline --graph <commitA>..<commitB>` — show commits reachable from `<commitB>` but not from `<commitA>` (e.g. finding commits unique to a branch)
 - `git log --oneline --follow -- <file-path>` — show commit history for a file in the current branch
 - `git reflog` — find lost commits for disaster recovery (e.g. after an accidental hard reset)
+- `git shortlog <commitA>..<commitB>` — list the contributions by each author in a specific commit range
+- `git shortlog -sn <commitA>..<commitB>` — summarize the number of commits by each author in a specific commit range
 - `git show <commit>` — show commit info
 - `git blame -w -M -C <commit> -- <file-path>` — show who was last responsible for each line in a file as of a specific commit
 - `git describe --contains <commit>` — show the earliest tag that contains a commit (e.g. to find which version release a commit is part of)
