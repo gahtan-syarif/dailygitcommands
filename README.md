@@ -62,7 +62,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Remotes
 - `git remote add origin <repo-url>` — link local repo to a remote repo for fetching, pulling, and pushing
-- `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from (`upstream`) or someone else's fork
+- `git remote add <remote-name> <repo-url>` — link an additional remote repo, such as the original repo your fork was created from or someone else's fork
 - `git remote add <remote-name> <file-path>` — add a bundle file as a read-only remote
 - `git remote remove <remote-name>` — remove a remote
 - `git remote rename <old-name> <new-name>` — rename a configured remote
@@ -71,6 +71,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Syncing
 - `git fetch --prune --all` — update all remote tracking branches and remove stale ones
+- `git fetch <remote-name> <tag-name>` — fetch a specific tag from a remote
 - `git fetch <remote-name> --tags` — fetch all tags from a remote
 - `git fetch <remote-name> --prune --prune-tags` — fetch all tags from a remote and remove local ones that no longer exist upstream
 - `git pull` — fetch latest commits from the configured remote branch and merge them into current local branch
@@ -79,7 +80,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Pushing
 - `git push` — push commits from current local branch to the configured remote branch
 - `git push --force` — force sync the configured remote branch to match the current local one
-- `git push --mirror <repo-url>` — make a target repo match a local mirror exactly
+- `git push --mirror <remote-name>` — make a target repo match a local mirror exactly
 - `git push -u origin HEAD` — create a remote branch from the current branch (or update it if it already exists) and set it as the upstream
 - `git push origin <tag-name>` — push a local tag to remote
 - `git push origin --tags` — push all local tags to remote
