@@ -160,7 +160,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git range-diff <commitA>..<commitB> <commitC>..<commitD>` — compare two sequences of commits, matching corresponding commits and showing how each patch changed (e.g. for comparing two slightly different versions of a feature branch)
 
 > [!NOTE]
-> Append `--stat` to `git diff` to show a per-file summary with total insertions and deletions instead of the full patch
+> Append `--stat` to `git diff` to show a per-file summary with total insertions and deletions instead of the full patch.
 
 ## Stashing
 - `git stash push -u` — move staged and unstaged changes to a stash (including untracked files)
