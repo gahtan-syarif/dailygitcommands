@@ -95,8 +95,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git restore --staged <path>` — unstage changes in a specific file or directory
 
 ## Committing
-- `git commit -m "<message>"` — commit staged changes locally
-- `git commit --amend -m "<message>"` — replace the latest commit with a new commit
+- `git commit` — commit staged changes locally
+- `git commit --amend` — replace the latest commit with a new commit
 - `git commit --amend --no-edit` — replace the latest commit with a new commit while keeping the existing commit message
 
 ## Branching
@@ -112,7 +112,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Tagging
 - `git tag <tag-name> <commit>` — create a local lightweight tag for a specific commit
-- `git tag -a <tag-name> -m "<tag-message>" <commit>` — create a local annotated tag for a specific commit
+- `git tag -a <tag-name> <commit>` — create a local annotated tag for a specific commit
 - `git tag -d <tag-name>` — delete a local tag
 - `git tag -n` — list all local tags
 
@@ -167,8 +167,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 > Append `--stat` to `git diff` to show a per-file summary with total insertions and deletions instead of the full patch.
 
 ## Notes
-- `git notes add -m "<message>" <commit>` — attach a note to a commit
-- `git notes append -m "<message>" <commit>` — append to an existing note attached to a commit
+- `git notes add <commit>` — write and attach a note to a commit
 - `git notes show <commit>` — show the note attached to a commit
 - `git notes edit <commit>` — edit the note attached to a commit
 - `git notes remove <commit>` — remove the note attached to a commit
