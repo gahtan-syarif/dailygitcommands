@@ -17,7 +17,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [Committing](#committing) — Committing changes
 - [Branching](#branching) — Working with branches
 - [Tagging](#tagging) — Working with tags
-- [Integration](#integration) — Combining branches
+- [Integration](#integration) — Combining changes
 - [Undoing](#undoing) — Undoing changes
 - [Conflicts](#conflicts) — Resolving conflicts
 - [History](#history) — Exploring commit history
