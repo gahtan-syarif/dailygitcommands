@@ -117,10 +117,10 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git tag -n` — list all local tags
 
 ## Integration
-- `git merge <branch-name>` — merge another branch into the current branch
-- `git merge --no-ff <branch-name>` — create a merge commit even if a fast-forward merge is possible
-- `git merge --ff-only <branch-name>` — merge only if it can be performed as a fast-forward
-- `git merge --squash <branch-name>` — merge another branch into the current branch as a single staged change (does not create a commit)
+- `git merge <commit>` — merge the changes up to a specified commit into the current branch
+- `git merge --no-ff <commit>` — create a merge commit even if a fast-forward merge is possible
+- `git merge --ff-only <commit>` — merge only if it can be performed as a fast-forward
+- `git merge --squash <commit>` — merge the changes up to a specified commit into the current branch as a single staged change (does not create a commit)
 - `git rebase <commit>` — rebase the current branch onto the specified commit
 - `git rebase -i <commit>` — interactively rebase the current branch onto the specified commit (usually used for rewriting commit history)
 - `git cherry-pick <commit>...` — copy one or more commits onto the current branch
