@@ -32,7 +32,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimizing repo performance
-- [Diagnostics](#diagnostics) — Check repo health
+- [Diagnostics](#diagnostics) — Check repo health and statistics
 - [Exporting](#exporting) — Export repo contents
 - [Documentation](#documentation) — Manuals and documentation
 
@@ -249,7 +249,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## Diagnostics
 - `git fsck` — check repo integrity and detect corrupted, missing, or unreachable objects
-- `git repo structure` — display repository structure and object statistics
+- `git repo structure` — display repo structure and object statistics
 
 ## Exporting
 - `git archive --format=<format> -o <file-path> <commit>` — create an archive (`zip`, `tar`, `tar.gz`, etc.) containing a snapshot of the repo contents at a specific commit (e.g. for distributing versioned releases)
