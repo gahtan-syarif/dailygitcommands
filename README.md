@@ -250,7 +250,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Diagnostics
 - `git fsck` — check repo integrity and detect corrupted, missing, or unreachable objects
 - `git repo structure` — display repo structure and object statistics
-- `git diagnose -o <file-path>` — create a diagnostic archive for troubleshooting
+- `git bugreport --diagnose -o <dir-path>` — create a bug report and diagnostic archive for troubleshooting and reporting git issues
 
 ## Exporting
 - `git archive --format=<format> -o <file-path> <commit>` — create an archive (`zip`, `tar`, `tar.gz`, etc.) containing a snapshot of the repo contents at a specific commit (e.g. for distributing versioned releases)
