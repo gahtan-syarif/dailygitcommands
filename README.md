@@ -92,9 +92,9 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 ## Staging
 - `git add -A` — stage all changes
 - `git add <path>` — stage changes in a specific file or directory
-- `git add -p <file-path>` — interactively stage selected hunks from a file or directory
+- `git add -p <path>` — interactively stage selected hunks from a file or directory
 - `git restore --staged <path>` — unstage changes in a specific file or directory
-- `git restore --staged -p <file-path>` — interactively unstage selected hunks from a file or directory
+- `git restore --staged -p <path>` — interactively unstage selected hunks from a file or directory
 
 ## Committing
 - `git commit` — commit staged changes locally
