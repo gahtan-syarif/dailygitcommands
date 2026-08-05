@@ -137,7 +137,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git revert <commit>...` — create one or more new commits that undoes the specified commits
 - `git revert -m 1 <commit>` — create a new commit that undoes a merge commit (reverts a merge)
 - `git clean -fd` — remove untracked files and directories
-- `git clean -fdx` — same as above but also removes gitignored files
+- `git clean -fdx` — same as above but also removes gitignored files and directories
 
 ## Conflicts
 - `git <merge|rebase|cherry-pick|revert|am> --abort` — aborts the operation if there's a conflict
