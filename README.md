@@ -32,7 +32,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - [LFS](#lfs) — Managing large binary files
 - [Sparse](#sparse) — Working with large repos selectively
 - [Maintenance](#maintenance) — Optimizing repo performance
-- [Diagnostics](#diagnostics) — Check repo health and statistics
+- [Diagnostics](#diagnostics) — Check repo health and stats
 - [Exporting](#exporting) — Export repo contents
 - [Documentation](#documentation) — Manuals and documentation
 
