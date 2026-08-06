@@ -2,6 +2,9 @@
 Cheatsheet for the Git commands and configuration for my personal use. Feel free to use it as reference.
 
 > [!NOTE]
+> This cheatsheet is intended for interactive terminal use, not for scripting/automation.
+
+> [!NOTE]
 > Throughout this cheatsheet, `<commit>` can be any reference that identifies a specific commit, such as a commit hash, a branch name (this points to the last commit of that branch), a tag, a symbolic reference (e.g. `HEAD`), or revision expression (e.g. `HEAD~3`).
 
 ## Table of Contents
