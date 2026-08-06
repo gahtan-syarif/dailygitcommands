@@ -143,7 +143,8 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 - `git clean -fdx` — same as above but also removes gitignored files and directories
 
 ## Conflicts
-- `git <merge|rebase|cherry-pick|revert|am> --abort` — aborts the operation if there's a conflict
+- `git <merge|rebase|cherry-pick|revert|am> --abort` — aborts the operation if there's a conflict (returns to the pre-operation state)
+- `git <merge|rebase|cherry-pick|revert|am> --quit` — quits the operation without resetting the state
 - `git <merge|rebase|cherry-pick|revert|am> --continue` — continues the operation after resolving conflict
 - `git <rebase|cherry-pick|revert|am> --skip` — skips the current conflicting commit and move to the next one
 
