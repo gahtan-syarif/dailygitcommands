@@ -226,6 +226,7 @@ Cheatsheet for the Git commands and configuration for my personal use. Feel free
 
 ## LFS
 - `git lfs install` — initialize Git LFS for the current user (only done once per user)
+- `git lfs uninstall` — de-initialize Git LFS for the current user
 - `git lfs track "<pattern>"` — track matching files with Git LFS
 - `git lfs untrack "<pattern>"` — stop tracking matching files with Git LFS
 - `git lfs prune` — remove locally cached LFS objects that are no longer needed, to free up disk space
